@@ -31,7 +31,8 @@ Anotherawesomecharacter,Shaman,Restoration,race2,Realmtoo,60,0,0.0000,0.00,80,24
 
 TODO
 
-- move to google sheets, char summary should be doable via token authentication, probably would just require listing of chars and realms there...
+- ~~move to google sheets, char summary should be doable via token authentication, probably would just require listing of chars and realms there... Update btn?---~~
+- OR when running script, update/create google sheet from the csv above? https://developers.google.com/sheets/api/quickstart/python
 - prettify
 - lint
 
