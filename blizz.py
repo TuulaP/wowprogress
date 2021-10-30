@@ -1,0 +1,145 @@
+
+import pandas as pd
+import os
+import json
+
+from dotenv import load_dotenv
+
+load_dotenv() 
+
+ 
+client_id = os.environ.get("CLIENT_ID")
+client_secret = os.environ.get("CLIENT_SECRET")
+redirect_uri = os.environ.get("REDIRECT_URI")
+access_token = os.environ.get("TOKEN")
+
+# OAuth endpoints given in the Google API documentation
+authorization_base_url = "https://eu.battle.net/oauth/authorize"
+token_url = "https://eu.battle.net/oauth/token"
+scope = [
+    "wow.profile"
+]
+
+#getting token: curl -u {client_id}:{client_secret} -d grant_type=client_credentials https://eu.battle.net/oauth/token
+
+
+from requests_oauthlib import OAuth2Session
+google = OAuth2Session(client_id, scope=scope, redirect_uri=redirect_uri)
+
+# Redirect user to Google for authorization
+authorization_url, state = google.authorization_url(authorization_base_url,
+    # offline for refresh token
+    # force to always make user click authorize
+    access_type="offline", prompt="select_account")
+print('Please go here and authorize,', authorization_url)
+
+# Get the authorization verifier code from the callback url
+redirect_response = input('Paste the full redirect URL here:')
+
+# Fetch the access token
+google.fetch_token(token_url, client_secret=client_secret,
+        authorization_response=redirect_response)
+
+
+
+# Fetch a protected resource, i.e. user profile
+#https://eu.api.blizzard.com/profile/user/wow?namespace=profile-us&locale=en_GB&access_token=US77NGV80rwo4QosEIm78JcIi7hawmjBTX
+
+r = google.get('https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu&locale=en_GB')
+
+##print(r.content)
+
+# process characters
+
+
+charinfo = json.loads(r.content)
+
+#print(charinfo["_links"])
+#print("wowaccounts---->\n")
+#print(charinfo["wow_accounts"])
+
+allmychars = []
+
+for account in charinfo["wow_accounts"]:
+    #print("---- ACCCOUNT ----")
+    
+    
+    for char in account["characters"]:
+        #print("---- CHAR ---- \n")
+        #print(char['character'])
+        #print(char['name'])
+        #print(char['realm']['name'])
+        #print(char['playable_class']['name'])
+
+        allmychars.append(char['character']['href'])
+
+
+
+#print("Allmychars\n\n")
+#print(allmychars)
+
+
+# ------------------------------------
+# Process each character
+# ------------------------------------
+
+datarows = []
+
+
+# get max xp per level
+X = pd.read_csv('xp.txt', sep="\t", header=0, usecols=[0,1])
+
+
+#r2 = google.get('https://eu.api.blizzard.com/profile/wow/character/realm/char?namespace=profile-eu&locale=en_GB')
+
+for charurl in allmychars:
+
+    print("Processing url ", charurl+'&locale=en_GB&access_token='+access_token)
+
+    r2 = google.get(charurl+'&locale=en_GB')
+
+    print(r2.content)
+
+    chardetails = json.loads(r2.content)
+
+    if 'code' in chardetails:
+        print("Oh noes , got 403")
+        break
+
+    print(chardetails["name"])
+    print(chardetails["race"]["name"])
+    print(chardetails["character_class"]["name"])
+    print(chardetails["active_spec"]["name"])
+    print(chardetails["realm"]["name"])
+    print(chardetails["level"])
+    print(chardetails["experience"])
+
+    level = chardetails["level"]
+    totalevel = X["Total"][level]
+    levelpros = chardetails["experience"] / totalevel
+
+    print("Level progress:", format(levelpros,".4f") , "/", format(levelpros*100,".2f") , " %")
+
+
+    datarows.append([chardetails["name"]
+        , chardetails["character_class"]["name"]
+        , chardetails["active_spec"]["name"]
+        , chardetails["realm"]["name"]
+        , chardetails["level"]
+        , chardetails["experience"]
+        , format(levelpros,".4f")
+        , format(levelpros*100,".2f")]
+    )
+
+
+
+## and finally the result file.
+
+import csv
+
+header=["name","character_class","spec","realm","level","experience","levelpros","level%"]
+
+with open('test.csv', 'w', encoding="UTF8") as fp:
+   writer = csv.writer(fp, delimiter=',')
+   writer.writerow(header)
+   writer.writerows(datarows)
