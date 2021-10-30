@@ -2,6 +2,7 @@
 import pandas as pd
 import os
 import json
+from blizzardapi import BlizzardApi
 
 from dotenv import load_dotenv
 
@@ -12,6 +13,7 @@ client_id = os.environ.get("CLIENT_ID")
 client_secret = os.environ.get("CLIENT_SECRET")
 redirect_uri = os.environ.get("REDIRECT_URI")
 access_token = os.environ.get("TOKEN")
+
 
 # OAuth endpoints given in the Google API documentation
 authorization_base_url = "https://eu.battle.net/oauth/authorize"
@@ -43,14 +45,12 @@ google.fetch_token(token_url, client_secret=client_secret,
 
 
 # Fetch a protected resource, i.e. user profile
-#https://eu.api.blizzard.com/profile/user/wow?namespace=profile-us&locale=en_GB&access_token=US77NGV80rwo4QosEIm78JcIi7hawmjBTX
+#https://eu.api.blizzard.com/profile/user/wow?namespace=profile-us&locale=en_GB&access_token=ABC
 
 r = google.get('https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu&locale=en_GB')
 
-##print(r.content)
 
 # process characters
-
 
 charinfo = json.loads(r.content)
 
@@ -59,6 +59,8 @@ charinfo = json.loads(r.content)
 #print(charinfo["wow_accounts"])
 
 allmychars = []
+charnames = []
+realmnames = []
 
 for account in charinfo["wow_accounts"]:
     #print("---- ACCCOUNT ----")
@@ -72,13 +74,15 @@ for account in charinfo["wow_accounts"]:
         #print(char['playable_class']['name'])
 
         allmychars.append(char['character']['href'])
+        charnames.append(char['name'].lower())
 
+        realmname=char['realm']['name'].lower().replace("-","")
+        realmname=realmname.replace(" ","-")
+        realmnames.append(realmname)
 
 
 #print("Allmychars\n\n")
-#print(allmychars)
-
-
+print(allmychars)
 # ------------------------------------
 # Process each character
 # ------------------------------------
@@ -90,21 +94,42 @@ datarows = []
 X = pd.read_csv('xp.txt', sep="\t", header=0, usecols=[0,1])
 
 
-#r2 = google.get('https://eu.api.blizzard.com/profile/wow/character/realm/char?namespace=profile-eu&locale=en_GB')
+print(charnames)
+print(realmnames)
+print("----------------")
 
-for charurl in allmychars:
 
-    print("Processing url ", charurl+'&locale=en_GB&access_token='+access_token)
+blizapiclient = BlizzardApi(client_id, client_secret)
 
-    r2 = google.get(charurl+'&locale=en_GB')
+#cdx = blizapiclient.wow.profile.get_character_profile_summary("eu","en_GB",realm,char)
+#print(cdx)
 
-    print(r2.content)
+ind=0
 
-    chardetails = json.loads(r2.content)
+import time
+
+numofchars = len(charnames)
+
+while ind < numofchars:
+
+    charname=charnames[ind]
+    #print("Processing url ", charurl+'&locale=en_US&access_token='+access_token'
+
+    #r2 = google.get(charurl+'&locale=en_US')
+    #print(r2.content)
+    print("Processing {0} from realm {1}".format(charname,realmnames[ind]))
+
+    chardetails = blizapiclient.wow.profile.get_character_profile_summary("eu","en_GB", realmnames[ind], charname)
+    #json.loads(r2.content)
+    ind+=1
+    time.sleep(2)
+
+    print(chardetails)
+
 
     if 'code' in chardetails:
-        print("Oh noes , got 403")
-        break
+        print("Oh noes! For {0} from {1} realm got ".format(charname,realmnames[ind]), chardetails['code'])
+        continue
 
     print(chardetails["name"])
     print(chardetails["race"]["name"])
@@ -113,6 +138,15 @@ for charurl in allmychars:
     print(chardetails["realm"]["name"])
     print(chardetails["level"])
     print(chardetails["experience"])
+
+
+    renownlvl=0
+    if "covenant_progess" in chardetails:
+        renownlvl = chardetails["covenant_progress"]["renown_level"]
+        print(chardetails["covenant_progress"])
+    else:
+        renownlvl = 0
+
 
     level = chardetails["level"]
     totalevel = X["Total"][level]
@@ -124,11 +158,14 @@ for charurl in allmychars:
     datarows.append([chardetails["name"]
         , chardetails["character_class"]["name"]
         , chardetails["active_spec"]["name"]
+        , chardetails["race"]["name"]
         , chardetails["realm"]["name"]
         , chardetails["level"]
         , chardetails["experience"]
         , format(levelpros,".4f")
-        , format(levelpros*100,".2f")]
+        , format(levelpros*100,".2f")
+        , renownlvl
+        , chardetails['equipped_item_level']]
     )
 
 
@@ -137,7 +174,7 @@ for charurl in allmychars:
 
 import csv
 
-header=["name","character_class","spec","realm","level","experience","levelpros","level%"]
+header=["name","character_class","spec","race","realm","level","experience","levelpros","level%", "renown", "ilvl"]
 
 with open('test.csv', 'w', encoding="UTF8") as fp:
    writer = csv.writer(fp, delimiter=',')
