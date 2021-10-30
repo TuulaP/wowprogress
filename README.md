@@ -20,6 +20,15 @@ _blizz.py_
 - Store character data to a table, which is then written to "test.csv" csv file.
 
 
+test.csv output sample
+<pre>
+name,character_class,spec,race,realm,level,experience,levelpros,level%,renown,ilvl
+Somefancycharactername,Warlock,Destruction,race1,Somerealm,24,24824,0.8902,89.02,0,26
+Anotherawesomecharacter,Shaman,Restoration,race2,Realmtoo,60,0,0.0000,0.00,80,246
+</pre>
+
+
+
 TODO
 
 - move to google sheets, char summary should be doable via token authentication, probably would just require listing of chars and realms there...
