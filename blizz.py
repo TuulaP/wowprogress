@@ -141,12 +141,10 @@ while ind < numofchars:
 
 
     renownlvl=0
-    if "covenant_progess" in chardetails:
+    if "covenant_progress" in chardetails:
         renownlvl = chardetails["covenant_progress"]["renown_level"]
-        print(chardetails["covenant_progress"])
-    else:
-        renownlvl = 0
-
+        #print(chardetails["covenant_progress"])
+  
 
     level = chardetails["level"]
     totalevel = X["Total"][level]
