@@ -5,8 +5,9 @@ import json
 from blizzardapi import BlizzardApi
 
 from dotenv import load_dotenv
-
 load_dotenv() 
+
+from requests_oauthlib import OAuth2Session
 
  
 client_id = os.environ.get("CLIENT_ID")
@@ -15,7 +16,7 @@ redirect_uri = os.environ.get("REDIRECT_URI")
 access_token = os.environ.get("TOKEN")
 
 
-# OAuth endpoints given in the Google API documentation
+# OAuth endpoints given in the Blizzard API documentation
 authorization_base_url = "https://eu.battle.net/oauth/authorize"
 token_url = "https://eu.battle.net/oauth/token"
 scope = [
@@ -25,11 +26,10 @@ scope = [
 #getting token: curl -u {client_id}:{client_secret} -d grant_type=client_credentials https://eu.battle.net/oauth/token
 
 
-from requests_oauthlib import OAuth2Session
-google = OAuth2Session(client_id, scope=scope, redirect_uri=redirect_uri)
+blizzard = OAuth2Session(client_id, scope=scope, redirect_uri=redirect_uri)
 
-# Redirect user to Google for authorization
-authorization_url, state = google.authorization_url(authorization_base_url,
+# Redirect user to blizzard for authorization
+authorization_url, state = blizzard.authorization_url(authorization_base_url,
     # offline for refresh token
     # force to always make user click authorize
     access_type="offline", prompt="select_account")
@@ -39,7 +39,7 @@ print('Please go here and authorize,', authorization_url)
 redirect_response = input('Paste the full redirect URL here:')
 
 # Fetch the access token
-google.fetch_token(token_url, client_secret=client_secret,
+blizzard.fetch_token(token_url, client_secret=client_secret,
         authorization_response=redirect_response)
 
 
@@ -47,7 +47,7 @@ google.fetch_token(token_url, client_secret=client_secret,
 # Fetch a protected resource, i.e. user profile
 #https://eu.api.blizzard.com/profile/user/wow?namespace=profile-us&locale=en_GB&access_token=ABC
 
-r = google.get('https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu&locale=en_GB')
+r = blizzard.get('https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu&locale=en_GB')
 
 
 # process characters
@@ -115,7 +115,7 @@ while ind < numofchars:
     charname=charnames[ind]
     #print("Processing url ", charurl+'&locale=en_US&access_token='+access_token'
 
-    #r2 = google.get(charurl+'&locale=en_US')
+    #r2 = blizzard.get(charurl+'&locale=en_US')
     #print(r2.content)
     print("Processing {0} from realm {1}".format(charname,realmnames[ind]))
 
