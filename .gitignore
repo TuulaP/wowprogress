@@ -4,6 +4,8 @@
 tmp/
 wowprog/*
 test.csv
-
+my_json_file.json
 
 blizzapi.py
+token.pickle
+token_write.pickle
