@@ -4,6 +4,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow,Flow
 from google.auth.transport.requests import Request
 import os
 import pickle
+from datetime import datetime
 
 # from https://medium.com/analytics-vidhya/how-to-read-and-write-data-to-google-spreadsheet-using-python-ebf54d51a72c
 
@@ -16,10 +17,11 @@ load_dotenv()
 gsheetid = os.environ.get("GSHEET_ID")
 
 SAMPLE_SPREADSHEET_ID_input = gsheetid
-SAMPLE_RANGE_NAME = 'A1:K30'
+SAMPLE_RANGE_NAME = 'test!A1:K30'
+RANGE2 = 'versions!A1:A100'
 
-def main():
-    global values_input, service
+def read_spreadsheet():
+    global values_input, service, values_versions
     creds = None
     if os.path.exists('token.pickle'):
         with open('token.pickle', 'rb') as token:
@@ -39,35 +41,21 @@ def main():
     # Call the Sheets API
     sheet = service.spreadsheets()
     result_input = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID_input,
-                                range=SAMPLE_RANGE_NAME).execute()
+                        range=SAMPLE_RANGE_NAME).execute()
     values_input = result_input.get('values', [])
+
+    result_input2 = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID_input,
+                        range=RANGE2).execute()
+    values_versions = result_input2.get('values', [])
+    print(values_versions)
+
 
     if not values_input and not values_expansion:
         print('No data found.')
 
-main()
-
-df=pd.DataFrame(values_input[1:], columns=values_input[0])
-
-print(df)
-
-print("READING DONE")
 
 
 
-
-df_gold=df[(df['level']=='60')] # & (df['Sport']=='Gymnastics')]
-
-from dotenv import load_dotenv
-
-load_dotenv()  
-gsheetid = os.environ.get("GSHEET_ID")
-
-SAMPLE_SPREADSHEET_ID_input = gsheetid
-
-
-#change the range if needed
-SAMPLE_RANGE_NAME = 'A1:K30'
 
 def Create_Service(client_secret_file, api_service_name, api_version, *scopes):
     global service
@@ -98,8 +86,6 @@ def Create_Service(client_secret_file, api_service_name, api_version, *scopes):
         print(e)
         #return None
         
-# change 'my_json_file.json' by your downloaded JSON file.
-Create_Service('my_json_file.json', 'sheets', 'v4',['https://www.googleapis.com/auth/spreadsheets'])
     
 def Export_Data_To_Sheets():
     response_date = service.spreadsheets().values().update(
@@ -110,7 +96,58 @@ def Export_Data_To_Sheets():
             majorDimension='ROWS',
             values=df_gold.T.reset_index().T.values.tolist()) # NB!
     ).execute()
-    print('Sheet successfully Updated')
+    print('Sheet 1 successfully Updated')
 
-Export_Data_To_Sheets()
+    response_data2 = service.spreadsheets().values().update(
+        spreadsheetId=gsheetid,
+        valueInputOption='RAW',
+        range=RANGE2,
+        body=dict(
+            majorDimension='ROWS',
+            values=df2.T.reset_index().T.values.tolist()) # NB!
+    ).execute()
+    print('Sheet 2 successfully Updated')
 
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    read_spreadsheet()
+
+    ## current values
+    ## df=pd.DataFrame(values_input[1:], columns=values_input[0])
+
+    df = pd.read_csv('test.csv')
+
+    print(df)
+
+    print("READING DONE")
+
+    df2=pd.DataFrame(values_versions[1:], columns=values_versions[0])
+
+    indx = len(values_versions)
+
+    dateTimeNow = datetime.now()
+    timestampStr = dateTimeNow.strftime("%d.%m.%Y %H:%M:%S.%f")
+
+    new_row = pd.Series(data={'UpdatedDate':timestampStr})
+    df2 = df2.append(new_row, ignore_index=True)
+
+    print(df2)
+
+    df_gold  = df  # do any processing desired to sheet 1.
+
+    # df_gold=df[(df['level']=='60')] # & (df['Sport']=='Gymnastics')]
+
+
+    #change the range if needed
+    SAMPLE_RANGE_NAME = 'A1:K30'
+    # change 'my_json_file.json' by your downloaded JSON file.
+    Create_Service('my_json_file.json', 'sheets', 'v4',['https://www.googleapis.com/auth/spreadsheets'])
+
+    Export_Data_To_Sheets()
