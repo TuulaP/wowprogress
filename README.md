@@ -34,7 +34,13 @@ TODO
 - ~~move to google sheets, char summary should be doable via token authentication, probably would just require listing of chars and realms there... Update btn?---~~
 - OR when running script, update/create google sheet from the csv above? https://developers.google.com/sheets/api/quickstart/python
 - prettify
-- lint
+- ~~lint~~
+- "what has changed" since last run info (new column(s))? background color? 
+     * e.g. exp gone up by X points.
+     * character Z has gone up Y levels
+
+
+
 
 
 
