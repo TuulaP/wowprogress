@@ -1,15 +1,18 @@
 
-import pandas as pd
-import os
-import json
 from blizzardapi import BlizzardApi
-
 from dotenv import load_dotenv
-load_dotenv() 
-
 from requests_oauthlib import OAuth2Session
 
- 
+import csv
+import json
+import os
+
+import pandas as pd
+import time
+
+load_dotenv()
+
+
 client_id = os.environ.get("CLIENT_ID")
 client_secret = os.environ.get("CLIENT_SECRET")
 redirect_uri = os.environ.get("REDIRECT_URI")
@@ -20,10 +23,10 @@ access_token = os.environ.get("TOKEN")
 authorization_base_url = "https://eu.battle.net/oauth/authorize"
 token_url = "https://eu.battle.net/oauth/token"
 scope = [
-    "wow.profile"
+    "wow.profile",
 ]
 
-#getting token: curl -u {client_id}:{client_secret} -d grant_type=client_credentials https://eu.battle.net/oauth/token
+# getting token: curl -u {client_id}:{client_secret} -d grant_type=client_credentials https://eu.battle.net/oauth/token
 
 
 blizzard = OAuth2Session(client_id, scope=scope, redirect_uri=redirect_uri)
@@ -32,7 +35,8 @@ blizzard = OAuth2Session(client_id, scope=scope, redirect_uri=redirect_uri)
 authorization_url, state = blizzard.authorization_url(authorization_base_url,
     # offline for refresh token
     # force to always make user click authorize
-    access_type="offline", prompt="select_account")
+    access_type='offline', prompt='select_account')
+
 print('Please go here and authorize,', authorization_url)
 
 # Get the authorization verifier code from the callback url
@@ -40,12 +44,12 @@ redirect_response = input('Paste the full redirect URL here:')
 
 # Fetch the access token
 blizzard.fetch_token(token_url, client_secret=client_secret,
-        authorization_response=redirect_response)
+    authorization_response=redirect_response)
 
 
 
 # Fetch a protected resource, i.e. user profile
-#https://eu.api.blizzard.com/profile/user/wow?namespace=profile-us&locale=en_GB&access_token=ABC
+# https://eu.api.blizzard.com/profile/user/wow?namespace=profile-us&locale=en_GB&access_token=ABC
 
 r = blizzard.get('https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu&locale=en_GB')
 
@@ -54,34 +58,34 @@ r = blizzard.get('https://eu.api.blizzard.com/profile/user/wow?namespace=profile
 
 charinfo = json.loads(r.content)
 
-#print(charinfo["_links"])
-#print("wowaccounts---->\n")
-#print(charinfo["wow_accounts"])
+# print(charinfo["_links"])
+# print("wowaccounts---->\n")
+# print(charinfo["wow_accounts"])
 
 allmychars = []
 charnames = []
 realmnames = []
 
 for account in charinfo["wow_accounts"]:
-    #print("---- ACCCOUNT ----")
-    
-    
+    # print("---- ACCCOUNT ----")
+
+
     for char in account["characters"]:
-        #print("---- CHAR ---- \n")
-        #print(char['character'])
-        #print(char['name'])
-        #print(char['realm']['name'])
-        #print(char['playable_class']['name'])
+        # print("---- CHAR ---- \n")
+        # print(char['character'])
+        # print(char['name'])
+        # print(char['realm']['name'])
+        # print(char['playable_class']['name'])
 
         allmychars.append(char['character']['href'])
         charnames.append(char['name'].lower())
 
-        realmname=char['realm']['name'].lower().replace("-","")
-        realmname=realmname.replace(" ","-")
+        realmname = char['realm']['name'].lower().replace("-","")
+        realmname = realmname.replace(" ","-")
         realmnames.append(realmname)
 
 
-#print("Allmychars\n\n")
+# print("Allmychars\n\n")
 print(allmychars)
 # ------------------------------------
 # Process each character
@@ -101,34 +105,36 @@ print("----------------")
 
 blizapiclient = BlizzardApi(client_id, client_secret)
 
-#cdx = blizapiclient.wow.profile.get_character_profile_summary("eu","en_GB",realm,char)
-#print(cdx)
+# cdx = blizapiclient.wow.profile.get_character_profile_summary("eu","en_GB",realm,char)
+# print(cdx)
 
-ind=0
+ind = 0
 
-import time
 
 numofchars = len(charnames)
 
 while ind < numofchars:
 
-    charname=charnames[ind]
-    #print("Processing url ", charurl+'&locale=en_US&access_token='+access_token'
+    charname = charnames[ind]
+    # print("Processing url ", charurl+'&locale=en_US&access_token='+access_token'
 
-    #r2 = blizzard.get(charurl+'&locale=en_US')
-    #print(r2.content)
-    print("Processing {0} from realm {1}".format(charname,realmnames[ind]))
+    # r2 = blizzard.get(charurl+'&locale=en_US')
+    # print(r2.content)
 
-    chardetails = blizapiclient.wow.profile.get_character_profile_summary("eu","en_GB", realmnames[ind], charname)
-    #json.loads(r2.content)
-    ind+=1
+    print('Processing {0} from realm {1}'.format(charname, realmnames[ind]))
+
+    chardetails = blizapiclient.wow.profile.get_character_profile_summary(
+        "eu", "en_GB", realmnames[ind], charname)
+
+    # json.loads(r2.content)
+    ind += 1
     time.sleep(2)
 
     print(chardetails)
 
 
     if 'code' in chardetails:
-        print("Oh noes! For {0} from {1} realm got ".format(charname,realmnames[ind]), chardetails['code'])
+        print('Oh noes! For {0} from {1} realm got '.format(charname, realmnames[ind]), chardetails['code'])
         continue
 
     print(chardetails["name"])
@@ -140,17 +146,18 @@ while ind < numofchars:
     print(chardetails["experience"])
 
 
-    renownlvl=0
+    renownlvl = 0
+
     if "covenant_progress" in chardetails:
         renownlvl = chardetails["covenant_progress"]["renown_level"]
-        #print(chardetails["covenant_progress"])
-  
+        # print(chardetails["covenant_progress"])
+
 
     level = chardetails["level"]
     totalevel = X["Total"][level]
     levelpros = chardetails["experience"] / totalevel
 
-    print("Level progress:", format(levelpros,".4f") , "/", format(levelpros*100,".2f") , " %")
+    print("Level progress:", format(levelpros,".4f") , "/", format( levelpros * 100,".2f") , " %")
 
 
     datarows.append([chardetails["name"]
@@ -160,21 +167,21 @@ while ind < numofchars:
         , chardetails["realm"]["name"]
         , chardetails["level"]
         , chardetails["experience"]
-        , format(levelpros,".4f")
-        , format(levelpros*100,".2f")
+        , format(levelpros , ".4f")
+        , format(levelpros * 100 , ".2f")
         , renownlvl
         , chardetails['equipped_item_level']]
     )
 
 
 
-## and finally the result file.
+# and finally the result file.
 
-import csv
 
-header=["name","character_class","spec","race","realm","level","experience","levelpros","level%", "renown", "ilvl"]
+header = ["name","character_class","spec","race","realm","level","experience","levelpros","level%", "renown", "ilvl"]
 
 with open('test.csv', 'w', encoding="UTF8") as fp:
-   writer = csv.writer(fp, delimiter=',')
-   writer.writerow(header)
-   writer.writerows(datarows)
+    writer = csv.writer(fp, delimiter=',')
+    writer.writerow(header)
+    writer.writerows(datarows)
+
