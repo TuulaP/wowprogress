@@ -175,7 +175,7 @@ while ind < numofchars:
 
 
 
-# and finally the result file.
+# and finally the results processing
 
 
 header = ["name","character_class","spec","race","realm","level","experience","levelpros","level%", "renown", "ilvl"]
@@ -184,4 +184,5 @@ with open('test.csv', 'w', encoding="UTF8") as fp:
     writer = csv.writer(fp, delimiter=',')
     writer.writerow(header)
     writer.writerows(datarows)
+
 

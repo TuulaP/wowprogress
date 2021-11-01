@@ -17,7 +17,7 @@ load_dotenv()
 gsheetid = os.environ.get("GSHEET_ID")
 
 SAMPLE_SPREADSHEET_ID_input = gsheetid
-SAMPLE_RANGE_NAME = 'test!A1:K30'
+SAMPLE_RANGE_NAME = 'test!A1:L30'
 RANGE2 = 'versions!A1:A100'
 
 def read_spreadsheet():
@@ -120,7 +120,7 @@ if __name__ == '__main__':
     read_spreadsheet()
 
     ## current values
-    ## df=pd.DataFrame(values_input[1:], columns=values_input[0])
+    df_old=pd.DataFrame(values_input[1:], columns=values_input[0])
 
     df = pd.read_csv('test.csv')
 
@@ -138,15 +138,17 @@ if __name__ == '__main__':
     new_row = pd.Series(data={'UpdatedDate':timestampStr})
     df2 = df2.append(new_row, ignore_index=True)
 
-    print(df2)
-
+    # df_gold is the new dataframe
     df_gold  = df  # do any processing desired to sheet 1.
 
+    df_gold['exp_diff'] = pd.to_numeric(df['experience']) - pd.to_numeric(df_old['experience'])
+
+    print(df_gold)
+
+    # Filterings
     # df_gold=df[(df['level']=='60')] # & (df['Sport']=='Gymnastics')]
 
 
-    #change the range if needed
-    SAMPLE_RANGE_NAME = 'A1:K30'
     # change 'my_json_file.json' by your downloaded JSON file.
     Create_Service('my_json_file.json', 'sheets', 'v4',['https://www.googleapis.com/auth/spreadsheets'])
 
