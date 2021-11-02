@@ -29,15 +29,17 @@ Anotherawesomecharacter,Shaman,Restoration,race2,Realmtoo,60,0,0.0000,0.00,80,24
 
 
 
-TODO
 
-- ~~move to google sheets, char summary should be doable via token authentication, probably would just require listing of chars and realms there... Update btn?---~~
+**Todo**
+
+- ~~move to google sheets, char summary should be doable via token authentication, probably would just require listing of chars and realms there... Update btn?~~
+- ~~lint~~
 - OR when running script, update/create google sheet from the csv above? https://developers.google.com/sheets/api/quickstart/python
 - prettify
-- ~~lint~~
-- "what has changed" since last run info (new column(s))? background color? 
-     * e.g. exp gone up by X points.
+- "what has changed" since last run info (new column(s)), background color
+     * ~~e.g. exp gone up by X points.~~
      * character Z has gone up Y levels
+- Is it possible to follow-up currencies, which character has which amount of Champion's Seals etc.
 
 
 
