@@ -9,6 +9,7 @@ import os
 
 import pandas as pd
 import time
+from datetime import datetime
 
 load_dotenv()
 
@@ -184,5 +185,50 @@ with open('test.csv', 'w', encoding="UTF8") as fp:
     writer = csv.writer(fp, delimiter=',')
     writer.writerow(header)
     writer.writerows(datarows)
+
+
+# update the google sheet.
+
+from gsheet import read_spreadsheet, Create_Service, Export_Data_To_Sheets
+
+(values_input, values_versions) = read_spreadsheet()
+
+## current values
+df_old = pd.DataFrame(values_input[1:], columns=values_input[0])
+
+df = pd.read_csv('test.csv')
+
+print(df)
+
+print("READING DONE")
+
+df2 = pd.DataFrame(values_versions[1:], columns=values_versions[0])
+
+indx = len(values_versions)
+
+dateTimeNow = datetime.now()
+timestampStr = dateTimeNow.strftime("%d.%m.%Y %H:%M:%S.%f")
+
+new_row = pd.Series(data={'UpdatedDate':timestampStr})
+df2 = df2.append(new_row, ignore_index=True)
+
+# df_gold is the new dataframe
+df_gold  = df  # do any processing desired to sheet 1.
+
+df_gold['exp_diff'] = pd.to_numeric(df['experience']) - pd.to_numeric(df_old['experience'])
+
+df_gold['levels_up'] = pd.to_numeric(df['level']) - pd.to_numeric(df_old['level'])
+
+
+print(df_gold)
+
+# Filterings
+# df_gold=df[(df['level']=='60')] # & (df['Sport']=='Gymnastics')]
+
+
+# change 'my_json_file.json' by your downloaded JSON file.
+Create_Service('my_json_file.json', 'sheets', 'v4',['https://www.googleapis.com/auth/spreadsheets'])
+
+Export_Data_To_Sheets(df_gold, df2)
 
 

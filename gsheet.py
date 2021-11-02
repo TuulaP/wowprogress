@@ -8,20 +8,22 @@ from datetime import datetime
 
 # from https://medium.com/analytics-vidhya/how-to-read-and-write-data-to-google-spreadsheet-using-python-ebf54d51a72c
 
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # here enter the id of your google sheet
 from dotenv import load_dotenv
 
-load_dotenv()  
-gsheetid = os.environ.get("GSHEET_ID")
-
-SAMPLE_SPREADSHEET_ID_input = gsheetid
-SAMPLE_RANGE_NAME = 'test!A1:L30'
-RANGE2 = 'versions!A1:A100'
 
 def read_spreadsheet():
     global values_input, service, values_versions
+
+    load_dotenv()  
+    gsheetid = os.environ.get("GSHEET_ID")
+
+    SAMPLE_SPREADSHEET_ID_input = gsheetid
+    SAMPLE_RANGE_NAME = 'test!A1:M30'
+    RANGE2 = 'versions!A1:A100'
+    SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+
     creds = None
     if os.path.exists('token.pickle'):
         with open('token.pickle', 'rb') as token:
@@ -53,6 +55,7 @@ def read_spreadsheet():
     if not values_input and not values_expansion:
         print('No data found.')
 
+    return (values_input, values_versions)
 
 
 
@@ -87,7 +90,16 @@ def Create_Service(client_secret_file, api_service_name, api_version, *scopes):
         #return None
         
     
-def Export_Data_To_Sheets():
+def Export_Data_To_Sheets(df_gold, df2):
+
+    load_dotenv()  
+    gsheetid = os.environ.get("GSHEET_ID")
+
+    SAMPLE_SPREADSHEET_ID_input = gsheetid
+    SAMPLE_RANGE_NAME = 'test!A1:M30'
+    RANGE2 = 'versions!A1:A100'
+
+
     response_date = service.spreadsheets().values().update(
         spreadsheetId=gsheetid,
         valueInputOption='RAW',
@@ -111,16 +123,11 @@ def Export_Data_To_Sheets():
 
 
 
-
-
-
-
-
 if __name__ == '__main__':
     read_spreadsheet()
 
     ## current values
-    df_old=pd.DataFrame(values_input[1:], columns=values_input[0])
+    df_old = pd.DataFrame(values_input[1:], columns=values_input[0])
 
     df = pd.read_csv('test.csv')
 
@@ -128,7 +135,7 @@ if __name__ == '__main__':
 
     print("READING DONE")
 
-    df2=pd.DataFrame(values_versions[1:], columns=values_versions[0])
+    df2 = pd.DataFrame(values_versions[1:], columns=values_versions[0])
 
     indx = len(values_versions)
 
@@ -143,6 +150,9 @@ if __name__ == '__main__':
 
     df_gold['exp_diff'] = pd.to_numeric(df['experience']) - pd.to_numeric(df_old['experience'])
 
+    df_gold['levels_up'] = pd.to_numeric(df['level']) - pd.to_numeric(df_old['level'])
+
+
     print(df_gold)
 
     # Filterings
@@ -152,4 +162,4 @@ if __name__ == '__main__':
     # change 'my_json_file.json' by your downloaded JSON file.
     Create_Service('my_json_file.json', 'sheets', 'v4',['https://www.googleapis.com/auth/spreadsheets'])
 
-    Export_Data_To_Sheets()
+    Export_Data_To_Sheets(df_gold, df2)
