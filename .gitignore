@@ -9,3 +9,5 @@ my_json_file.json
 blizzapi.py
 token.pickle
 token_write.pickle
+*.pickle
+copilot1.py

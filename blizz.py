@@ -10,6 +10,7 @@ import os
 import pandas as pd
 import time
 from datetime import datetime
+from gsheet import read_spreadsheet, Create_Service, Export_Data_To_Sheets
 
 load_dotenv()
 
@@ -129,7 +130,7 @@ while ind < numofchars:
 
     # json.loads(r2.content)
     ind += 1
-    time.sleep(2)
+#    time.sleep(2)
 
     print(chardetails)
 
@@ -189,8 +190,8 @@ with open('test.csv', 'w', encoding="UTF8") as fp:
 
 # update the google sheet.
 
-from gsheet import read_spreadsheet, Create_Service, Export_Data_To_Sheets
 
+print("Login to sheet!")
 (values_input, values_versions) = read_spreadsheet()
 
 ## current values
@@ -220,15 +221,17 @@ df_gold['exp_diff'] = pd.to_numeric(df['experience']) - pd.to_numeric(df_old['ex
 df_gold['levels_up'] = pd.to_numeric(df['level']) - pd.to_numeric(df_old['level'])
 
 
-print(df_gold)
-
-# Filterings
-# df_gold=df[(df['level']=='60')] # & (df['Sport']=='Gymnastics')]
+# test print
+# print(df_gold)
 
 
-# change 'my_json_file.json' by your downloaded JSON file.
+print("Opening sheet")
 Create_Service('my_json_file.json', 'sheets', 'v4',['https://www.googleapis.com/auth/spreadsheets'])
 
+# Fix for mysterious invalid json payload issue, from  https://github.com/burnash/gspread/issues/680#issuecomment-561936295
+df_gold.fillna('', inplace=True)
+
+print("Final print to sheet ")
 Export_Data_To_Sheets(df_gold, df2)
 
 

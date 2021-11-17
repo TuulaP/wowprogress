@@ -19,6 +19,10 @@ _blizz.py_
     
 - Store character data to a table, which is then written to "test.csv" csv file.
 
+- NB! If google sheet login fails, remove the token.pickle and token_write.pickle. Then there occurs
+reauthentication and files get recreated.
+
+
 
 test.csv output sample
 <pre>
