@@ -220,6 +220,13 @@ df_gold['exp_diff'] = pd.to_numeric(df['experience']) - pd.to_numeric(df_old['ex
 
 df_gold['levels_up'] = pd.to_numeric(df['level']) - pd.to_numeric(df_old['level'])
 
+if df_gold['levels_up'].any() < 0:
+    df_gold['levels_up'] = pd.to_numeric(df_old['level'])
+
+
+# fixing up exp counting if leveled up
+if df_gold['levels_up'].any() > 0:
+    df_gold['exp_diff'] = pd.to_numeric(df['experience'])
 
 # test print
 # print(df_gold)

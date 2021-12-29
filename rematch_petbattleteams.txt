@@ -1,0 +1,170 @@
+__ General __
+
+Addius the Tormentor:598J:1115QC:122B2IO:21272JA:
+Blingtron 4000:267T:122BNE:121314R:1116G7:
+Bloodtusk:4A8K:11161CI:11171BB:11141BB:
+Brok_wplushie::1116143:111B8L:11161CI:
+Caregiver Maximillian:5969:1116143:11171BB:222414D:
+Cassius:4RLT:11131S9:ZL:221814F:
+Chi-Chi, Hatchling of Chi-Ji:26IT:1113HO:1113FG:1118148:
+Christoph VonFeasel:2JGF:22165S:11171BB:1115198:
+CK-9 Micro-Oppression Unit:4N9E:21265S:11181FS:121B8L:
+Creakclank:4N9D:122316M:11181FS:12167V:
+Dr. Ion Goldbloom_oikea:267U:211414Q:2115198:11152JF:
+Dundley Stickyfingers:596J:2123HP:2123LU:11272A5:
+Eyegor:598C:2215198:11171BB:122316M:
+Faryl:59A1:222814F:2117HD:222414D:
+Glitterdust:599S:111414E:11171BB:122414D:
+Gnomefeaster:4N9A:11181FS:121814F:112A2J5:
+Gorgemouth:596Q:121316M:122ANB:11231HN:
+Gutretch:212F:11161CI:12271BB:1115198:
+Jawbone:592D:11131S9:ZL:221814F:
+Jeremy Feasel:21PA:22165S:11171BB:1115198:
+just_magics::212814F:222414D:21181FT:
+Little Tommy Newcomer:27SQ:211414Q:121B8L:212C309:
+Lorewalker Cho:267M:1228PI:2216GQ:1219G2:
+Nameless Mystic:3J5V:1225QC:222CAJ:111B2VQ:
+Nearly Headless Jacob:212C:111CH9:11281RR:11181LI:
+Nightfang:59A0:1115QC:11271BB:1115198:
+Rascal:59A5:122316M:122B2IO:1129M6:
+Rotgut:596F:221BEV:221BMQ:2219K1:
+Scorch:597N:11131S9:21181TP:21165S:
+Sewer Creeper:5BL5:122316M:222415R:221814S:
+Shademaster Kiryn:267Q:212415R:1226143:11171BB:
+Stratios:592B:2128MS:122919C:2128ME:
+Sully "The Pickle" McLeary_oikea:267P:2123HP:11131S9:1128ME:
+Sylla:5983:212C1D1:222414D:121414E:
+Thenia:5929:222414D:1228148:122C147:
+Unit 35:4N9F:11131S9:11181LI:11181LI:
+Vesharr:2L2J:11181LI:11181LI:11141LH:
+vselementaal::112354:111B2JM:22165S:
+Wise Mari:267S:1116143:1125QC:12292J6:
+Xu-Fu, Cub of Xuen:26A9:11231HI:121B8L:2115198:
+Yu'la, Broodling of Yu'lon:26J3:1223NI:122ANB:11252CJ:
+Zolla:592A:122312T:11239U:221922F:
+
+__ specials __
+
+Algalon the Observer:3GJB:221316M:112814F:222814S:
+algalon2::222415R:11181FS:1125QC:
+algalon4::2226HC:112814F:221316M:
+algalon5::2226HC:112814F:2223170:
+algalon7::1219G2:112814F:2223170:
+algalon8::2217CV:112814F:221316M:
+algalon9::122B2IO:2117JJ:11181H6:
+aquatic_sylla::222314U:112354:22281D7:
+aquatics::112354:122B2IO:222B2JM:
+Aulier:36P2:111414Q:1225QC:111916B:
+beasties_pvp::11131S9:122323D:11152QP:
+Blackmane:4JAA:11181FS:121B8L:111B14C:
+Bordin Steadyfist:217V:112BBV:121414E:11161CI:
+Chitara:49SV:111919C:2129ME:2118ME:
+Chittermaw:5BL3:1223NI:122CAJ:21181LO:
+ChrisFeasel2pet::222BML:11171BB:11171L9:
+crittertry1::1129M6:1215N7:222C31J:
+Crypt Fiend:4JBV:122CH9:12182AH:212822G:
+dragon1::112A1LQ:11281LP:21181LO:
+Felsoul Seer:379J:1225QC:11171C8:2128ME:
+Fras Siabi:4NOM:222415R:222B1NI:211B2IO:
+Frenzied Knifefang:4N98:11181FS:12292J6:221BEV:
+Gargra:2L2I:211B14C:111B2GL:112CAJ:
+Huncher:4JC5:11232IN:122ANB:122BEV:
+Hungry Icefang:36AE:221316M:21181FS:11172M:
+huumins::1116143:12187O:21271B8:
+just_critters::12281RR:1225E1:1118KV:
+just_elementals::1227136:222C93:1216G7:
+just_elems2::1128KA:22131RT:112C93:
+just_elems3::1227136:121C93:11133L:
+just_hares::1228A3:221BMQ:122BEV:
+just_mechs2::1225QC:11171BB:1115198:
+just_undeads::222316M:21165S:21188A:
+justowls::11181LI:11181LI:11141LH:
+Liz the Tormentor:4JCD:2126GQ:21182JL:12281LP:
+Madam Viciosa:3J5U:11133L:121316M:1225QC:
+majavat::122314R:221C14N:22131RT:
+maximillian-critters::22262J8:221C2KA:2115N7:
+mechs_glitterdust::112B14C:111CAJ:112414Q:
+Mistwing:5BL4:121316M:122BEV:121329G:
+Nefarious Terry:4JCH:122B2IO:212415R:1119K5:
+Plagued Critters:4NG9:2213HO:112C309:2213FG:
+Risen Guard:4NK3:1128A3:12182AH:222B1NI:
+shadow_aquatic_addius::112354:122B2IO:121314U:
+shadow_beasts1::11131S9:122323D:12131MF:
+shadow_critters_addius::22262J8:221BMQ:121B1NI:
+shadow_dragon_addius::12281LP:21181LO:222414D:
+shadow_elementals_addius::112312T:11239U:22131RT:
+shadow_flyings::21181TP:11181LI:11181LI:
+shadow_humanoids_addius::2126143:21271B8:111414E:
+shadow_magic_addius::1228148:121820E:1128148:
+shadow_undead_addius::122316M:2126GQ:21165S:
+sylla_aquatics::21231HQ:222822G:222415R:
+sylla_critters::2215N7:112C309:2215N7:
+The Countess:5BL6:11181FS:1129K5:2129ME:
+Tommy the Cruel:4JC6:22162J8:122ANB:11171M1:
+Trapper Jarrun:36VF:2123LU:11171RO:1113K7:
+Varenne:376A:1116NA:21181TP:2129ME:
+zolla_aquatic::2127GO:22232AI:21182AE:
+zolla_aquatics::2127GO:112354:22132AI:
+
+__ isle __
+
+Carrotus Maximus:2JDC:2113HP:2113LU:1113LU:
+chen_try4::112CAJ:2215N7:11261CI:
+chenst_täpärästi::112CAJ:2229G2:11261CI:
+drion_welekk::211414Q:2115198:11161CI:
+Gnawface:2N1B:211414Q:212415R:221814S:
+Gorefu:2N1A:221814S:111B317:111B31F:
+hiilaa_sunreaver::12292RF:211414Q:11152JF:
+isle_xufu::111414Q:121B8L:111CMO:
+isles, chen, twopet::121B8L:2215N7:22261CI:
+isles_taranzhu_2pet::2128ME:2129ME:22261CI:
+mcleary 2::211513P:2223170:11161CI:
+Taran Zhu:267R:1126A1:11231ML:11142Q9:
+taranzhu_lima::222C2VB:12262VB:22261CI:
+taranzhu_try4::2128MS:21188A:11161CI:
+taranzhu_try5::221816A:2126140:11261CI:
+taranzhu_täpärävoitto::1126A1:11231ML:11261CI:
+wrathion_elekk::11281RR:22271A7:22261CI:
+Wrathion_tarkka:267K:11281CJ:12251I0:21181KO:
+wrathion_try3::11281CJ:12251I0:21181KO:
+wrathion_twopet::11281RR:12271A7:22261CI:
+xu-fu 2try::211C3K:21281TP:222CMO:
+xu-fu 3rdtry::211C3K:12171BB:121B8L:
+Yu'la, Broodling of Yu'lon:27P3:121816A:1116143:1116143:
+yula try 3::121816A:1116143:1116143:
+yula_try4::11131HN:211B30U:12292RF:
+yula_try5::121820E:122B2GL:1127H8:
+Zao, Calfling of Niuzao:26J2:21231HI:211B14C:111B31F:
+
+__ gnomeregan __
+
+Bloated Leper Rat:4EIL:1226HC:1113LU:1116G7:N:Curse of Doom\n Haunt\n Black Claw\n Hunting Party/ Flock\n Full health pet will be swapped in after Raptor/Ikky dies\n Pass\n As full health pet dies to Leprosy, Unborn Val'kyr will be resurrected, winning the battle!
+Bloated Leper Rat::121316M:222814S:ZR0:N:Curse of Doom\n Haunt\n Black Claw\n Hunting Party/ Flock\n Full health pet will be swapped in after Raptor/Ikky dies\n Pass\n As full health pet dies to Leprosy, Unborn Val'kyr will be resurrected, winning the battle!
+bloated lepergnomeTOIMII::222415R:22271M1:221CMP:N:Curse of Doom\n Haunt\n Black Claw\n Hunting Party/ Flock\n Full health pet will be swapped in after Raptor/Ikky dies\n Pass\n As full health pet dies to Leprosy, Unborn Val'kyr will be resurrected, winning the battle!
+Cockroach::122AMK:2223170:2215E0:N:Bite x5
+cockroach 2::122AMK:122BML:2215K1:N:Bite x5
+door console 4::1126140:122C1D1:1116143:N:Shell Shield\n Dive\n Absorb\n Absorb\n Shell Shield\n Absorb\n Dive\n Absorb\n Shell Shield\n Absorb\n Absorb\n Dive if you can, if not your snail should die here\n Bring in second snail\n Acidic Goo\n Absorb\n Absorb\n Absorb\n Acidic Goo\n Dive\n Freeze Ray Robot Prototype should die here\n Acidic Goo\n Absorb\n Absorb\n Acidic Goo if you can, if not snail will die\n Bring in final pet\n Aquatic basic attack\n Aquatic basic attack
+Door Control 333::111314U:11232AI:22282AH:N:Shell Shield\n Dive\n Absorb\n Absorb\n Shell Shield\n Absorb\n Dive\n Absorb\n Shell Shield\n Absorb\n Absorb\n Dive if you can, if not your snail should die here\n Bring in second snail\n Acidic Goo\n Absorb\n Absorb\n Absorb\n Acidic Goo\n Dive\n Freeze Ray Robot Prototype should die here\n Acidic Goo\n Absorb\n Absorb\n Acidic Goo if you can, if not snail will die\n Bring in final pet\n Aquatic basic attack\n Aquatic basic attack
+Door Control Console:4FFK:1126140:122C1D1:1116143:N:Shell Shield\n Dive\n Absorb\n Absorb\n Shell Shield\n Absorb\n Dive\n Absorb\n Shell Shield\n Absorb\n Absorb\n Dive if you can, if not your snail should die here\n Bring in second snail\n Acidic Goo\n Absorb\n Absorb\n Absorb\n Acidic Goo\n Dive\n Freeze Ray Robot Prototype should die here\n Acidic Goo\n Absorb\n Absorb\n Acidic Goo if you can, if not snail will die\n Bring in final pet\n Aquatic basic attack\n Aquatic basic attack
+Door Control Console::2215N7:2213HO:222B2JM:N:Shell Shield\n Dive\n Absorb\n Absorb\n Shell Shield\n Absorb\n Dive\n Absorb\n Shell Shield\n Absorb\n Absorb\n Dive if you can, if not your snail should die here\n Bring in second snail\n Acidic Goo\n Absorb\n Absorb\n Absorb\n Acidic Goo\n Dive\n Freeze Ray Robot Prototype should die here\n Acidic Goo\n Absorb\n Absorb\n Acidic Goo if you can, if not snail will die\n Bring in final pet\n Aquatic basic attack\n Aquatic basic attack
+Door ControlConsole222::112354:211922V:122B2IO:N:Shell Shield\n Dive\n Absorb\n Absorb\n Shell Shield\n Absorb\n Dive\n Absorb\n Shell Shield\n Absorb\n Absorb\n Dive if you can, if not your snail should die here\n Bring in second snail\n Acidic Goo\n Absorb\n Absorb\n Absorb\n Acidic Goo\n Dive\n Freeze Ray Robot Prototype should die here\n Acidic Goo\n Absorb\n Absorb\n Acidic Goo if you can, if not snail will die\n Bring in final pet\n Aquatic basic attack\n Aquatic basic attack
+Environeer Bert:3PM9:11181CO:11141T3:111819N:
+gnome guard wolf2::121819N:2223170:2227K1:N:Immolate\n Conflagrate\n Burn\n Swap out pet to avoid Howl\n Deafeat wolf with your secondary pet, continue as normal.\n\nMake sure to keep your Broot/Blossoming) pet alive to use on the next fight.
+Gnomeregan Guard Mechanostrider::2223170:ZR0:2215E0:N:Sunlight\n Photosynthesis - refresh this with one round remaining\n Ironbark as a filler\n If your pet has Razor Talons left on it after defeating the boss, and no Ironbark up, it is best to swap out to another pet until it drops off.
+Gnomeregan Guard mechstrider2::112312T:11239U:2219C7:N:Immolate\n Conflagrate\n Burn\n Swap out pet to avoid Howl\n Deafeat wolf with your secondary pet, continue as normal.\n\nMake sure to keep your Broot/Blossoming) pet alive to use on the next fight.
+Gnomeregan Guard Tiger::11105C:2223170:2215E0:N:Immolate\n Conflagrate\n Immolate again if you can\n Pass - Tiger will Feign Death and die in the back line.
+Gnomeregan Guard Wolf:4EII:1116G7:11239U:2219C7:N:Immolate\n Conflagrate\n Burn\n Swap out pet to avoid Howl\n Deafeat wolf with your secondary pet, continue as normal.\n\nMake sure to keep your Broot/Blossoming) pet alive to use on the next fight.
+Gnomeregan Guard Wolf::11105C:2223170:2215E0:N:Immolate\n Conflagrate\n Burn\n Swap out pet to avoid Howl\n Deafeat wolf with your secondary pet, continue as normal.\n\nMake sure to keep your Broot/Blossoming) pet alive to use on the next fight.
+guard tiger 2::121819N:2223170:2227K1:N:Immolate\n Conflagrate\n Immolate again if you can\n Pass - Tiger will Feign Death and die in the back line.
+Leper Rat:4EHG:2219K1:22131MF:22151NI:N:Dodge\n Flurry until undead round\n\n Burrow on Undead round
+Leper Rat::2215BQ:2223170:2215E0:N:Dodge\n Flurry until undead round\n\n Burrow on Undead round
+Living Napalm:4EO7:1113LU:122C93:221BMQ:
+Living Napalm::1113HP:2223170:2215E0:N:Frog Kiss\n Healing Wave\n Frog Kiss\n Water Jet\n Frog Kiss\n Water Jet
+Living Permafrost:4EO5:1229HM:112A1H5:12151NI:
+Living Permafrost::1229HM:2223170:2215E0:N:Pump\n Water Jet\n Cleansing Rain - to change the weather\n Pump\n Water Jet
+Living Sludge::122BNF:1113LU:221B1NI:N:Frog Kiss\n Water Jet\n Frog Kiss\n Healing Wave\n Frog Kiss
+mechanostrider2::112312T:11133L:2219C7:N:Immolate\n Conflagrate\n Burn\n Swap out pet to avoid Howl\n Deafeat wolf with your secondary pet, continue as normal.\n\nMake sure to keep your Broot/Blossoming) pet alive to use on the next fight.
+Prototype Annoy-O-Tron:4EIH:21181BK:11181FS:111931U:
+Prototype Annoy-O-Tron::2223170:ZR0:ZR0:N:Open with Sunlight\nKeep up Photosynthesis\nUse Ironbark between shields
+Pulverizer Bot Mk 6001:4EI4:221C14N:212314R:21165S:N:Pass, pet will be swapped out to Electrified Razortooth\n Lightning Shield\n Jolt\n Paralyzing Shock\n Your Electrified Razortooth should die, bring in Thundertail Flapper and use Thunderbolt\n Lightning Shield\n Jolt\n Your Thundertail Flapper should die here, bring in your last pet to clean up.
+Pulverizer Bot Mk 6001::221C14N:212314R:2223170:N:Pass, pet will be swapped out to Electrified Razortooth\n Lightning Shield\n Jolt\n Paralyzing Shock\n Your Electrified Razortooth should die, bring in Thundertail Flapper and use Thunderbolt\n Lightning Shield\n Jolt\n Your Thundertail Flapper should die here, bring in your last pet to clean up.
