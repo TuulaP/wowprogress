@@ -96,7 +96,7 @@ def Export_Data_To_Sheets(df_gold, df2):
     gsheetid = os.environ.get("GSHEET_ID")
 
     SAMPLE_SPREADSHEET_ID_input = gsheetid
-    SAMPLE_RANGE_NAME = 'test!A1:M30'
+    SAMPLE_RANGE_NAME = 'test!A1:R35'  #was M30
     RANGE2 = 'versions!A1:A100'
 
 

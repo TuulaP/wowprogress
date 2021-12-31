@@ -134,10 +134,38 @@ while ind < numofchars:
 
     print(chardetails)
 
+    import sys
 
     if 'code' in chardetails:
         print('Oh noes! For {0} from {1} realm got '.format(charname, realmnames[ind]), chardetails['code'])
         continue
+
+
+    # Get character professions, and skill level
+    charprofs = {}
+    if 'professions' in chardetails:
+        ##print("Profs at:", chardetails['professions']['href'])
+
+        r2 = blizzard.get(chardetails['professions']['href'])
+        profs = json.loads(r2.content)
+        ##print(profs)
+
+        if 'primaries' in profs:
+            primaries = profs['primaries']
+
+            for profession in primaries:
+                # print("XXX\nXXX\nProfession:", profession)
+
+                if 'tiers' in profession:
+                    basedata = profession['tiers'][0]
+                    nameofprof = basedata['tier']['name']
+                    skillevel = basedata['skill_points']
+                    charprofs[nameofprof]=skillevel
+
+
+    ## print("Professions:", charprofs)
+
+
 
     print(chardetails["name"])
     print(chardetails["race"]["name"])
@@ -170,6 +198,18 @@ while ind < numofchars:
 
     print("Level progress:", format(levelpros,".4f") , "/", format( levelpros * 100,".2f") , " %")
 
+    career1 = "None1"
+    career2 = "None2"
+    careerpoints=0
+    careerpoints2=0
+
+    for prof in charprofs:
+        if career1 == "None1":
+            career1 = prof
+            careerpoints = charprofs[prof]
+        else:
+            career2 = prof
+            careerpoints2 = charprofs[prof]
 
 
     datarows.append([chardetails["name"]
@@ -182,15 +222,17 @@ while ind < numofchars:
         , format(levelpros , ".4f")
         , format(levelpros * 100 , ".2f")
         , renownlvl
-        , chardetails['equipped_item_level']]
-    )
+        , chardetails['equipped_item_level']
+        , career1, careerpoints
+        , career2, careerpoints2
+    ])
 
 
 
 # and finally the results processing
 
 
-header = ["name","character_class","spec","race","realm","level","experience","levelpros","level%", "renown", "ilvl"]
+header = ["name","character_class","spec","race","realm","level","experience","levelpros","level%", "renown", "ilvl", "Profession1", "Profession1Points","Profession2","Profession2Points"]
 
 with open('test.csv', 'w', encoding="UTF8") as fp:
     writer = csv.writer(fp, delimiter=',')
