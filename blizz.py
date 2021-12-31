@@ -142,7 +142,14 @@ while ind < numofchars:
     print(chardetails["name"])
     print(chardetails["race"]["name"])
     print(chardetails["character_class"]["name"])
-    print(chardetails["active_spec"]["name"])
+
+    activespec = ""
+    if "active_spec" in chardetails:  # for very new chars this does not exist
+        print(chardetails["active_spec"]["name"])
+        activespec = chardetails["active_spec"]["name"]
+    else:
+        activespec = "No spec selected"
+
     print(chardetails["realm"]["name"])
     print(chardetails["level"])
     print(chardetails["experience"])
@@ -153,6 +160,8 @@ while ind < numofchars:
     if "covenant_progress" in chardetails:
         renownlvl = chardetails["covenant_progress"]["renown_level"]
         # print(chardetails["covenant_progress"])
+    else:
+        renownlvl = 0
 
 
     level = chardetails["level"]
@@ -162,9 +171,10 @@ while ind < numofchars:
     print("Level progress:", format(levelpros,".4f") , "/", format( levelpros * 100,".2f") , " %")
 
 
+
     datarows.append([chardetails["name"]
         , chardetails["character_class"]["name"]
-        , chardetails["active_spec"]["name"]
+        , activespec
         , chardetails["race"]["name"]
         , chardetails["realm"]["name"]
         , chardetails["level"]
