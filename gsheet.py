@@ -4,7 +4,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow,Flow
 from google.auth.transport.requests import Request
 import os
 import pickle
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # from https://medium.com/analytics-vidhya/how-to-read-and-write-data-to-google-spreadsheet-using-python-ebf54d51a72c
 
@@ -60,12 +60,29 @@ def read_spreadsheet():
 
 
 
+def is_file_older_than (file, delta): 
+    # https://stackoverflow.com/a/65412797/364931
+    cutoff = datetime.utcnow() - delta
+    mtime = datetime.utcfromtimestamp(os.path.getmtime(file))
+    if mtime < cutoff:
+        return True
+    return False
+
+
+
 def Create_Service(client_secret_file, api_service_name, api_version, *scopes):
     global service
     SCOPES = [scope for scope in scopes[0]]
     #print(SCOPES)
     
     cred = None
+
+    # better to refresh token every time
+    if is_file_older_than('token.pickle', timedelta(days=1)):
+        # remove file
+        os.remove('token.pickle')
+        os.remove('token_write.pickle')
+    
 
     if os.path.exists('token_write.pickle'):
         with open('token_write.pickle', 'rb') as token:

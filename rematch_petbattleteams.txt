@@ -1,12 +1,17 @@
 __ General __
 
 Addius the Tormentor:598J:1115QC:122B2IO:21272JA:
+Algalon the Observer_RNG:3GJB:122B2IO:2116GQ:22181H6:
+algalon_day4::212415R:112814F:22181H6:
+algalon_day4_2::212415R:2116GQ:22181H6:
+algalon_day4_3::122B2IO:2116GQ:22181H6:
+Beguiling Orb:37VC:221722A:1213N6:111B2FI:
 Blingtron 4000:267T:122BNE:121314R:1116G7:
 Bloodtusk:4A8K:11161CI:11171BB:11141BB:
 Brok_wplushie::1116143:111B8L:11161CI:
+Burning Pandaren Spirit:22RF:1116143:1115Q4:111B1IS:
 Caregiver Maximillian:5969:1116143:11171BB:222414D:
 Cassius:4RLT:11131S9:ZL:221814F:
-Chi-Chi, Hatchling of Chi-Ji:26IT:1113HO:1113FG:1118148:
 Christoph VonFeasel:2JGF:22165S:11171BB:1115198:
 CK-9 Micro-Oppression Unit:4N9E:21265S:11181FS:121B8L:
 Creakclank:4N9D:122316M:11181FS:12167V:
@@ -14,30 +19,46 @@ Dr. Ion Goldbloom_oikea:267U:211414Q:2115198:11152JF:
 Dundley Stickyfingers:596J:2123HP:2123LU:11272A5:
 Eyegor:598C:2215198:11171BB:122316M:
 Faryl:59A1:222814F:2117HD:222414D:
+Flowing Pandaren Spirit:22RE:11181FS:21181TP:21271C8:
+flowingpandarenspirit::11181FS:21181TP:21271C8:
+glitter_critter::1126HC:1219EK:111B1RP:
 Glitterdust:599S:111414E:11171BB:122414D:
+glitterdust_elems_ehka::112C93:11239U:2223170:
+glitterdust_humanoids::1116143:1116143:21181KO:
 Gnomefeaster:4N9A:11181FS:121814F:112A2J5:
+Gorespine:22UE:11171BB:12171BB:22131T5:
 Gorgemouth:596Q:121316M:122ANB:11231HN:
+Greyhoof:22UG:11142OQ:11242Q9:2215198:
 Gutretch:212F:11161CI:12271BB:1115198:
 Jawbone:592D:11131S9:ZL:221814F:
 Jeremy Feasel:21PA:22165S:11171BB:1115198:
 just_magics::212814F:222414D:21181FT:
+kiryn_team2::222316M:1229F0:122B2IO:
 Little Tommy Newcomer:27SQ:211414Q:121B8L:212C309:
 Lorewalker Cho:267M:1228PI:2216GQ:1219G2:
 Nameless Mystic:3J5V:1225QC:222CAJ:111B2VQ:
 Nearly Headless Jacob:212C:111CH9:11281RR:11181LI:
 Nightfang:59A0:1115QC:11271BB:1115198:
+nono2::2128MS:122B2IO:111AF9:
 Rascal:59A5:122316M:122B2IO:1129M6:
 Rotgut:596F:221BEV:221BMQ:2219K1:
 Scorch:597N:11131S9:21181TP:21165S:
 Sewer Creeper:5BL5:122316M:222415R:221814S:
 Shademaster Kiryn:267Q:212415R:1226143:11171BB:
+Skitterer Xi'a:22UM:11162C8:2128MS:212819D:
+Splint Jr.:36OP:212415R:11181FS:2117GH:N:Turn 1    Black Claw\nTurn 2-4    Flock\nFlock\n\nspeed\npaw
 Stratios:592B:2128MS:122919C:2128ME:
 Sully "The Pickle" McLeary_oikea:267P:2123HP:11131S9:1128ME:
 Sylla:5983:212C1D1:222414D:121414E:
+Tarr the Terrible:2L26:2215198:2215198:112B1DO:
 Thenia:5929:222414D:1228148:122C147:
+Ti'un the Wanderer:22UI:122BML:11141BB:212819D:
 Unit 35:4N9F:11131S9:11181LI:11181LI:
 Vesharr:2L2J:11181LI:11181LI:11141LH:
+Vinu::22232IN:112814F:11142VP:
 vselementaal::112354:111B2JM:22165S:
+Wastewalker Shu:215J:11181FS:122814F:11271C8:
+whisp_pand_spirit::1116143:122814F:111B1IS:
 Wise Mari:267S:1116143:1125QC:12292J6:
 Xu-Fu, Cub of Xuen:26A9:11231HI:121B8L:2115198:
 Yu'la, Broodling of Yu'lon:26J3:1223NI:122ANB:11252CJ:
@@ -45,25 +66,30 @@ Zolla:592A:122312T:11239U:221922F:
 
 __ specials __
 
-Algalon the Observer:3GJB:221316M:112814F:222814S:
 algalon2::222415R:11181FS:1125QC:
 algalon4::2226HC:112814F:221316M:
 algalon5::2226HC:112814F:2223170:
 algalon7::1219G2:112814F:2223170:
 algalon8::2217CV:112814F:221316M:
 algalon9::122B2IO:2117JJ:11181H6:
+algalon_day3::212415R:112814F:112CAJ:
+algalon_dday2::212415R:2116GQ:11162VB:
+antari2::2116G7:1116143:22261CI:
 aquatic_sylla::222314U:112354:22281D7:
 aquatics::112354:122B2IO:222B2JM:
 Aulier:36P2:111414Q:1225QC:111916B:
 beasties_pvp::11131S9:122323D:11152QP:
 Blackmane:4JAA:11181FS:121B8L:111B14C:
+Bloodknight Antari:20VT:2116G7:1225QC:22261CI:
 Bordin Steadyfist:217V:112BBV:121414E:11161CI:
 Chitara:49SV:111919C:2129ME:2118ME:
 Chittermaw:5BL3:1223NI:122CAJ:21181LO:
 ChrisFeasel2pet::222BML:11171BB:11171L9:
 crittertry1::1129M6:1215N7:222C31J:
 Crypt Fiend:4JBV:122CH9:12182AH:212822G:
+Dos-Ryga:22UK:1126HC:1116143:1116143:
 dragon1::112A1LQ:11281LP:21181LO:
+Dreadwalker:2SDN:11181FS:1116143:222814F:
 Felsoul Seer:379J:1225QC:11171C8:2128ME:
 Fras Siabi:4NOM:222415R:222B1NI:211B2IO:
 Frenzied Knifefang:4N98:11181FS:12292J6:221BEV:
@@ -79,15 +105,25 @@ just_hares::1228A3:221BMQ:122BEV:
 just_mechs2::1225QC:11171BB:1115198:
 just_undeads::222316M:21165S:21188A:
 justowls::11181LI:11181LI:11141LH:
+Ka'wi the Gorger:22UB:11181FS:11181FS:122B19C:
+Kafi:22UJ:122BML:11171BB:11242Q9:
 Liz the Tormentor:4JCD:2126GQ:21182JL:12281LP:
+Lucky Yi:22UH:212415R:122B19C:2117GH:
 Madam Viciosa:3J5U:11133L:121316M:1225QC:
 majavat::122314R:221C14N:22131RT:
 maximillian-critters::22262J8:221C2KA:2115N7:
 mechs_glitterdust::112B14C:111CAJ:112414Q:
 Mistwing:5BL4:121316M:122BEV:121329G:
+Mo'ruk:215D:112CAJ:21181LO:11142OQ:
+Morulu The Elder:20VP:11181FS:112CAJ:22261CI:
+narrok::21181LI:1125Q4:11162C8:
 Nefarious Terry:4JCH:122B2IO:212415R:1119K5:
+Nicki Tinytech:20VM:1225QC:11181H6:2117GH:
+Nitun:22UL:11231ML:1125QC:2126140:
+No-No:22UF:2129ME:11181FS:121B23E:
 Plagued Critters:4NG9:2213HO:112C309:2213FG:
 Risen Guard:4NK3:1128A3:12182AH:222B1NI:
+Seeker Zusshi:21B6:2226NA:12291K1:111CNF:
 shadow_aquatic_addius::112354:122B2IO:121314U:
 shadow_beasts1::11131S9:122323D:12131MF:
 shadow_critters_addius::22262J8:221BMQ:121B1NI:
@@ -97,20 +133,33 @@ shadow_flyings::21181TP:11181LI:11181LI:
 shadow_humanoids_addius::2126143:21271B8:111414E:
 shadow_magic_addius::1228148:121820E:1128148:
 shadow_undead_addius::122316M:2126GQ:21165S:
+Summit Kid:1UNO:11171BB:111CNF:11242Q9:
 sylla_aquatics::21231HQ:222822G:222415R:
 sylla_critters::2215N7:112C309:2215N7:
+sylla_dragonkin::2117HD:122A1LQ:121AF9:
 The Countess:5BL6:11181FS:1129K5:2129ME:
+Thundering Pandaren Spirit:22RH:2115N7:122A1LQ:2215198:
 Tommy the Cruel:4JC6:22162J8:122ANB:11171M1:
 Trapper Jarrun:36VF:2123LU:11171RO:1113K7:
 Varenne:376A:1116NA:21181TP:2129ME:
+Whispering Pandaren Spirit:22RG:122414D:222814F:122A1LQ:
+xi'a2::112CAJ:21181LO:22261CI:
 zolla_aquatic::2127GO:22232AI:21182AE:
 zolla_aquatics::2127GO:112354:22132AI:
 
 __ isle __
 
+blingtron_day2::1226NA:12262C8:22261CI:N:Use Whirlpool, spam Snap, Au dead.\n\nUse Sun Light (for killing Lil b), spam Crush and Photosynthesis. \n\n\nAfter Lil b dead stop casting Sun Light spam Crush and Photosynthesis until Banks dead
+blingtron_tasapeli::222B2JM:2223170:22261CI:
+blingtron_try1::21182AH:2217K1:22261CI:
 Carrotus Maximus:2JDC:2113HP:2113LU:1113LU:
+Chen Stormstout:267N:112916B:2217K1:12282IL:
+chen_storms2::212415R:111414E:12282IO:
 chen_try4::112CAJ:2215N7:11261CI:
 chenst_täpärästi::112CAJ:2229G2:11261CI:
+Chi-Chi, Hatchling of Chi-Ji:26IT:1126G7:22281LO:11132J4:
+cho_twopet1::1228148:2126GQ:22261CI:
+drion_twopet::11141BB:122329G:22261CI:
 drion_welekk::211414Q:2115198:11161CI:
 Gnawface:2N1B:211414Q:212415R:221814S:
 Gorefu:2N1A:221814S:111B317:111B31F:
@@ -118,12 +167,20 @@ hiilaa_sunreaver::12292RF:211414Q:11152JF:
 isle_xufu::111414Q:121B8L:111CMO:
 isles, chen, twopet::121B8L:2215N7:22261CI:
 isles_taranzhu_2pet::2128ME:2129ME:22261CI:
+kiryn_twopet::22291S6:11131S9:22261CI:
+kiryn_twopet_day2::111B1IS:1214216:22261CI:
 mcleary 2::211513P:2223170:11161CI:
-Taran Zhu:267R:1126A1:11231ML:11142Q9:
+nitun2::121816A:212513P:21152QP:
+Taran Zhu:267R:122B31F:22291S6:22291M7:
+taranzhu2::22188A:121B1DO:2116GQ:
+taranzhu3::222C147:121820E:112354:
+taranzhu4::122B31F:22291S6:22291M7:
 taranzhu_lima::222C2VB:12262VB:22261CI:
 taranzhu_try4::2128MS:21188A:11161CI:
 taranzhu_try5::221816A:2126140:11261CI:
 taranzhu_täpärävoitto::1126A1:11231ML:11261CI:
+wastewalkershu1::122CNF:222814F:22261CI:
+wise_mari_twopet::1116143:1125QC:22261CI:
 wrathion_elekk::11281RR:22271A7:22261CI:
 Wrathion_tarkka:267K:11281CJ:12251I0:21181KO:
 wrathion_try3::11281CJ:12251I0:21181KO:
@@ -132,22 +189,34 @@ xu-fu 2try::211C3K:21281TP:222CMO:
 xu-fu 3rdtry::211C3K:12171BB:121B8L:
 Yu'la, Broodling of Yu'lon:27P3:121816A:1116143:1116143:
 yula try 3::121816A:1116143:1116143:
+yula_alt3::222919C:122BNI:1229MI:
+yula_finaltry::21171SC:122B203:21242AT:
+yula_try20::1219M6:2215MT:111819D:
 yula_try4::11131HN:211B30U:12292RF:
 yula_try5::121820E:122B2GL:1127H8:
+yula_try6::2116GQ:22242IS:12132VB:
 Zao, Calfling of Niuzao:26J2:21231HI:211B14C:111B31F:
+zao_alt2::21231HI:211B14C:212A2UK:
+zao_toimiva::212A31B:11181LP:1128A3:
+zao_try vI::122316M:2128PI:212916B:
+zao_vii::212A31B:11181LP:1128A3:
 
 __ gnomeregan __
 
 Bloated Leper Rat:4EIL:1226HC:1113LU:1116G7:N:Curse of Doom\n Haunt\n Black Claw\n Hunting Party/ Flock\n Full health pet will be swapped in after Raptor/Ikky dies\n Pass\n As full health pet dies to Leprosy, Unborn Val'kyr will be resurrected, winning the battle!
 Bloated Leper Rat::121316M:222814S:ZR0:N:Curse of Doom\n Haunt\n Black Claw\n Hunting Party/ Flock\n Full health pet will be swapped in after Raptor/Ikky dies\n Pass\n As full health pet dies to Leprosy, Unborn Val'kyr will be resurrected, winning the battle!
 bloated lepergnomeTOIMII::222415R:22271M1:221CMP:N:Curse of Doom\n Haunt\n Black Claw\n Hunting Party/ Flock\n Full health pet will be swapped in after Raptor/Ikky dies\n Pass\n As full health pet dies to Leprosy, Unborn Val'kyr will be resurrected, winning the battle!
+bloatedleperrat2::222A31B:122B2IO:11131S9:
 Cockroach::122AMK:2223170:2215E0:N:Bite x5
 cockroach 2::122AMK:122BML:2215K1:N:Bite x5
+Cockroach_3::122BML:2223170:22171M1:
 door console 4::1126140:122C1D1:1116143:N:Shell Shield\n Dive\n Absorb\n Absorb\n Shell Shield\n Absorb\n Dive\n Absorb\n Shell Shield\n Absorb\n Absorb\n Dive if you can, if not your snail should die here\n Bring in second snail\n Acidic Goo\n Absorb\n Absorb\n Absorb\n Acidic Goo\n Dive\n Freeze Ray Robot Prototype should die here\n Acidic Goo\n Absorb\n Absorb\n Acidic Goo if you can, if not snail will die\n Bring in final pet\n Aquatic basic attack\n Aquatic basic attack
 Door Control 333::111314U:11232AI:22282AH:N:Shell Shield\n Dive\n Absorb\n Absorb\n Shell Shield\n Absorb\n Dive\n Absorb\n Shell Shield\n Absorb\n Absorb\n Dive if you can, if not your snail should die here\n Bring in second snail\n Acidic Goo\n Absorb\n Absorb\n Absorb\n Acidic Goo\n Dive\n Freeze Ray Robot Prototype should die here\n Acidic Goo\n Absorb\n Absorb\n Acidic Goo if you can, if not snail will die\n Bring in final pet\n Aquatic basic attack\n Aquatic basic attack
 Door Control Console:4FFK:1126140:122C1D1:1116143:N:Shell Shield\n Dive\n Absorb\n Absorb\n Shell Shield\n Absorb\n Dive\n Absorb\n Shell Shield\n Absorb\n Absorb\n Dive if you can, if not your snail should die here\n Bring in second snail\n Acidic Goo\n Absorb\n Absorb\n Absorb\n Acidic Goo\n Dive\n Freeze Ray Robot Prototype should die here\n Acidic Goo\n Absorb\n Absorb\n Acidic Goo if you can, if not snail will die\n Bring in final pet\n Aquatic basic attack\n Aquatic basic attack
 Door Control Console::2215N7:2213HO:222B2JM:N:Shell Shield\n Dive\n Absorb\n Absorb\n Shell Shield\n Absorb\n Dive\n Absorb\n Shell Shield\n Absorb\n Absorb\n Dive if you can, if not your snail should die here\n Bring in second snail\n Acidic Goo\n Absorb\n Absorb\n Absorb\n Acidic Goo\n Dive\n Freeze Ray Robot Prototype should die here\n Acidic Goo\n Absorb\n Absorb\n Acidic Goo if you can, if not snail will die\n Bring in final pet\n Aquatic basic attack\n Aquatic basic attack
 Door ControlConsole222::112354:211922V:122B2IO:N:Shell Shield\n Dive\n Absorb\n Absorb\n Shell Shield\n Absorb\n Dive\n Absorb\n Shell Shield\n Absorb\n Absorb\n Dive if you can, if not your snail should die here\n Bring in second snail\n Acidic Goo\n Absorb\n Absorb\n Absorb\n Acidic Goo\n Dive\n Freeze Ray Robot Prototype should die here\n Acidic Goo\n Absorb\n Absorb\n Acidic Goo if you can, if not snail will die\n Bring in final pet\n Aquatic basic attack\n Aquatic basic attack
+door_control6::221922V:1225Q4:11171RO:
+door_ctrl_console5::2215N7:112C1MB:1116143:
 Environeer Bert:3PM9:11181CO:11141T3:111819N:
 gnome guard wolf2::121819N:2223170:2227K1:N:Immolate\n Conflagrate\n Burn\n Swap out pet to avoid Howl\n Deafeat wolf with your secondary pet, continue as normal.\n\nMake sure to keep your Broot/Blossoming) pet alive to use on the next fight.
 Gnomeregan Guard Mechanostrider::2223170:ZR0:2215E0:N:Sunlight\n Photosynthesis - refresh this with one round remaining\n Ironbark as a filler\n If your pet has Razor Talons left on it after defeating the boss, and no Ironbark up, it is best to swap out to another pet until it drops off.
@@ -155,16 +224,115 @@ Gnomeregan Guard mechstrider2::112312T:11239U:2219C7:N:Immolate\n Conflagrate\n 
 Gnomeregan Guard Tiger::11105C:2223170:2215E0:N:Immolate\n Conflagrate\n Immolate again if you can\n Pass - Tiger will Feign Death and die in the back line.
 Gnomeregan Guard Wolf:4EII:1116G7:11239U:2219C7:N:Immolate\n Conflagrate\n Burn\n Swap out pet to avoid Howl\n Deafeat wolf with your secondary pet, continue as normal.\n\nMake sure to keep your Broot/Blossoming) pet alive to use on the next fight.
 Gnomeregan Guard Wolf::11105C:2223170:2215E0:N:Immolate\n Conflagrate\n Burn\n Swap out pet to avoid Howl\n Deafeat wolf with your secondary pet, continue as normal.\n\nMake sure to keep your Broot/Blossoming) pet alive to use on the next fight.
-guard tiger 2::121819N:2223170:2227K1:N:Immolate\n Conflagrate\n Immolate again if you can\n Pass - Tiger will Feign Death and die in the back line.
-Leper Rat:4EHG:2219K1:22131MF:22151NI:N:Dodge\n Flurry until undead round\n\n Burrow on Undead round
+guard tiger 2::121819N:2223170:2227K1:N:ominous flame nearly solo\nImmolate\nscorched earh\n Conflagrate\n Immolate again if you can\n Pass - Tiger will Feign Death and die in the back line.
+Leper Rat:4EHG:2219K1:22131MF:22151NI:N:Dodge\n Flurry until undead round\n\n Burrow on Undead round\n\ndrilling machine.\nhowl\nflurry x 3\n\nrocket chicken:\nhowl\nflurry x 2 \n\nlast pet:\ndodge, flurry , flurry
 Leper Rat::2215BQ:2223170:2215E0:N:Dodge\n Flurry until undead round\n\n Burrow on Undead round
+leper_rat_morebunnies::2217K1:2218A3:221BEV:
 Living Napalm:4EO7:1113LU:122C93:221BMQ:
 Living Napalm::1113HP:2223170:2215E0:N:Frog Kiss\n Healing Wave\n Frog Kiss\n Water Jet\n Frog Kiss\n Water Jet
 Living Permafrost:4EO5:1229HM:112A1H5:12151NI:
 Living Permafrost::1229HM:2223170:2215E0:N:Pump\n Water Jet\n Cleansing Rain - to change the weather\n Pump\n Water Jet
 Living Sludge::122BNF:1113LU:221B1NI:N:Frog Kiss\n Water Jet\n Frog Kiss\n Healing Wave\n Frog Kiss
+livingperma_2::122CNF:2223170:221BMQ:
 mechanostrider2::112312T:11133L:2219C7:N:Immolate\n Conflagrate\n Burn\n Swap out pet to avoid Howl\n Deafeat wolf with your secondary pet, continue as normal.\n\nMake sure to keep your Broot/Blossoming) pet alive to use on the next fight.
 Prototype Annoy-O-Tron:4EIH:21181BK:11181FS:111931U:
 Prototype Annoy-O-Tron::2223170:ZR0:ZR0:N:Open with Sunlight\nKeep up Photosynthesis\nUse Ironbark between shields
 Pulverizer Bot Mk 6001:4EI4:221C14N:212314R:21165S:N:Pass, pet will be swapped out to Electrified Razortooth\n Lightning Shield\n Jolt\n Paralyzing Shock\n Your Electrified Razortooth should die, bring in Thundertail Flapper and use Thunderbolt\n Lightning Shield\n Jolt\n Your Thundertail Flapper should die here, bring in your last pet to clean up.
 Pulverizer Bot Mk 6001::221C14N:212314R:2223170:N:Pass, pet will be swapped out to Electrified Razortooth\n Lightning Shield\n Jolt\n Paralyzing Shock\n Your Electrified Razortooth should die, bring in Thundertail Flapper and use Thunderbolt\n Lightning Shield\n Jolt\n Your Thundertail Flapper should die here, bring in your last pet to clean up.
+
+__ wailingc __
+
+-Deviate Chomper:3I1K:22271C8:ZL:ZL:N:Attention: Do not put any important pets into your back row! They will take damage.\n\n    \n        \nTurn 1    Dodge\nTurn 2    Alpha Strike\nTurn 3    Nature's Ward\nTurns 4+    Keep Dodge on cooldown, Nature's Ward active and use Alpha Strike in between.\nYour Teroclaw Hatchling will solo the fight.
+-Deviate Flapper:3I1J:22271C8:ZL:ZL:N:Attention: Do not put any important pets into your back row! They will take damage.\n\n    \n        \nTurn 1    Dodge\nTurn 2    Alpha Strike\nTurn 3    Nature's Ward\nTurns 4+    Keep Dodge on cooldown, Nature's Ward active and use Alpha Strike in between.\nYour Teroclaw Hatchling will solo the fight.
+-Deviate Smallclaw:3I1I:22271C8:ZL:ZL:N:Attention: Do not put any important pets into your back row! They will take damage.\n\n    \n        \nTurn 1    Dodge\nTurn 2    Alpha Strike\nTurn 3    Nature's Ward\nTurns 4+    Keep Dodge on cooldown, Nature's Ward active and use Alpha Strike in between.\nYour Teroclaw Hatchling will solo the fight.
+-Dreadcoil:3I1N:2215198:22271C8:ZL:N:Turn 1    Extra Plating\nTurn 2    Make it Rain\nTurns 3+    Inflation until Dreadcoil is dead\nAn enemy Deviate comes in\nTurns 1+    Inflation until Lil' Bling dies.\nBring in your Teroclaw Hatchling\nTurn 1    Dodge\nTurn 2    Nature's Ward
+-Everliving Spore:3I1R:11181FS:222814F:222818:N:Turn 1    Black Claw\nTurn 2-4    Flock\nTurn 5    Savage Talon - Everliving Spore dies\nOne of the deviate enemies comes in\nTurn 1    Black Claw\nTurn 2    Flock until Ikky dies\nBring in your Emerald Proto-Whelp\nTurn 1    Emerald Presence\nTurn 2-4    Emerald Dream\nTurn 5+    Keep Emerald Presence active, use Emerald Dream if you drop below 900 health points and use Emerald Bite otherwise\nIf your Emerald Proto-Whelp does not manage, finish the rest with your third pet.\nCongratulations!
+-Growing Ectoplasm 1:3I1Q:1125QC:ZL:222814F:N:Turn 1    Decoy\nTurns 2+    Breath until Growing Ectoplasm is dead\nIf your Mechanical Pandaren Dragonling dies too early, bring in your random level 25 pet and use standard spells to kill Growing Ectoplasm\nAn enemy pet comes in\nTurns 1+    Breath and Decoy with your Mechanical Pandaren Dragonling and your random pet until they are both dead\nBring in your Emerald Proto-Whelp\nTurn 1    Emerald Presence\nTurns 2+    Keep Emerald Presence active, use Emerald Dream when you drop below 1000 health and use Emerald Bite to finish the enemy pets.\nDon't forget to jump! ;-)
+-Growing Ectoplasm 2::212415R:222814F:ZL:N:You can use a Zandalari Kneebiter as well instead of the Anklerender\n\n    \n        \nTurn 1    Black Claw\nTurns 2+3    Hunting Party\nTurn 4    Leap until Growing Ectoplasm is dead\nAn enemy pet comes in\nTurns 1+    Black Claw and Hunting Party until your Zandalari Anklerender dies\nBring in your Emerald Proto-Whelp\nTurn 1    Emerald Presence\nTurns 2+    Keep Emerald Presence active, use Emerald Dream when you drop below 1000 health and use Emerald Bite to finish the enemy pets.
+-Hiss:3I1P:212A1G5:121B8L:222814F:N:Turn 1    Whirlpool\nTurn 2    Call Lightning\nTurn 3    Swap to your Clockwork Gnome\nTurn 4    Build Turret\nTurn 5    Metal Fist\nTurn 6    Metal Fist - Hiss dies\nAn enemy pet comes in\nTurns 1+    Keep Build Turret on cooldown and use Metal Fist otherwise until your Clockwork Gnome dies\nBring back your Hydraling\nTurn 1    Call Lightning\nTurns 2+    Tail Slap until your Hydraling dies\nBring in your Emerald Proto-Whelp\nTurn 1    Emerald Presence\nTurn 2-4    Emerald Dream\nTurn 5+    Emerald Bite
+-Phyxia:3I1O:12141BB:22271C8:ZL:N:Turn 1    Wind-Up\nTurn 2    Supercharge\nTurn 3    Wind-Up\nTurns 4+    Toxic Smoke until Phyxia dies\nAn enemy pet comes in\nTurns 1+    Toxic Smoke until your Iron Starlette dies\nBring in your Teroclaw Hatchling\nTurn 1    Dodge\nTurn 2    Nature's Ward\nTurns 3+    Keep Dodge on cooldown, Nature's Ward active and use Alpha Strike in between.
+-Son of Skum:3I1L:112CAJ:1127AI:ZL:N:Turn 1    Bombing Run\nTurn 2    Decoy\nTurns 3+    Keep Bombing Run on cooldown and use Missile otherwise until your Darkmoon Zeppelin is dead.\nBring in your Darkmoon Tonk\nTurn 1    Shock and Awe\nTurns 2+    Missile until Son of Skum is dead\nOne of the deviate pets comes in\nTurns 1+    Continue with Missile and Shock and Awe until your Darkmoon Tonk drops low on health.\nThen:    Ion Cannon - your Darkmoon Tonk dies afterwards.\nIf necessary, clean up with your remaining pet.
+-Vilefang:3I1M:22271C8:ZL:222814F:N:Turn 1    Dodge\nTurn 2    Alpha Strike\nTurn 3    Nature's Ward\nTurn 4    Alpha Strike\nTurn 5    Alpha Strike\nTurn 6    Dodge\nTurns 7+    Alpha Strike until Vilefang is dead\nIf your Teroclaw Hatchling dies too early, bring in your random level 25 pet and finish Vilefang with standard attacks.\nAn enemy pet comes in\nTurns 1+    Use your Teroclaw Hatchling and random pet until both are dead - often they finish the fight already.\nBring in your Emerald Proto-Whelp\nTurn 1    Emerald Presence\nTurn 2+    Keep Emerald Presence active, use Emerald Dream when you drop below 1000 health and use Emerald Bite to finish the enemy pets.\nTry to heal up before you kill the last enemy pet
+10:spore_2::11181FS:222814F:122B2IO:N:Turn 1    Black Claw\nTurn 2-4    Flock\nTurn 5    Savage Talon - Everliving Spore dies\nOne of the deviate enemies comes in\nTurn 1    Black Claw\nTurn 2    Flock until Ikky dies\nBring in your Emerald Proto-Whelp\nTurn 1    Emerald Presence\nTurn 2-4    Emerald Dream\nTurn 5+    Keep Emerald Presence active, use Emerald Dream if you drop below 900 health points and use Emerald Bite otherwise\nIf your Emerald Proto-Whelp does not manage, finish the rest with your third pet.\nCongratulations!
+3:deviateflapper::2215K1:11131HO:1113K7:N:Attention: Do not put any important pets into your back row! They will take damage.\n\n    \n        \nTurn 1    Dodge\nTurn 2    Alpha Strike\nTurn 3    Nature's Ward\nTurns 4+    Keep Dodge on cooldown, Nature's Ward active and use Alpha Strike in between.\nYour Teroclaw Hatchling will solo the fight.
+4:sonofskum::112CAJ:1127AI:11242Q9:N:Turn 1    Bombing Run\nTurn 2    Decoy\nTurns 3+    Keep Bombing Run on cooldown and use Missile otherwise until your Darkmoon Zeppelin is dead.\nBring in your Darkmoon Tonk\nTurn 1    Shock and Awe\nTurns 2+    Missile until Son of Skum is dead\nOne of the deviate pets comes in\nTurns 1+    Continue with Missile and Shock and Awe until your Darkmoon Tonk drops low on health.\nThen:    Ion Cannon - your Darkmoon Tonk dies afterwards.\nIf necessary, clean up with your remaining pet.
+4:sonofskum2::12171BB:112916B:221B14C:N:Turn 1    Bombing Run\nTurn 2    Decoy\nTurns 3+    Keep Bombing Run on cooldown and use Missile otherwise until your Darkmoon Zeppelin is dead.\nBring in your Darkmoon Tonk\nTurn 1    Shock and Awe\nTurns 2+    Missile until Son of Skum is dead\nOne of the deviate pets comes in\nTurns 1+    Continue with Missile and Shock and Awe until your Darkmoon Tonk drops low on health.\nThen:    Ion Cannon - your Darkmoon Tonk dies afterwards.\nIf necessary, clean up with your remaining pet.
+5:phyxia2::12141BB:22151NI:21152JF:N:Turn 1    Wind-Up\nTurn 2    Supercharge\nTurn 3    Wind-Up\nTurns 4+    Toxic Smoke until Phyxia dies\nAn enemy pet comes in\nTurns 1+    Toxic Smoke until your Iron Starlette dies\nBring in your Teroclaw Hatchling\nTurn 1    Dodge\nTurn 2    Nature's Ward\nTurns 3+    Keep Dodge on cooldown, Nature's Ward active and use Alpha Strike in between.
+6:dreadcoil2::2215198:22151NI:121B23E:N:Turn 1    Extra Plating\nTurn 2    Make it Rain\nTurns 3+    Inflation until Dreadcoil is dead\nAn enemy Deviate comes in\nTurns 1+    Inflation until Lil' Bling dies.\nBring in your Teroclaw Hatchling\nTurn 1    Dodge\nTurn 2    Nature's Ward
+7:vilefang2::22151NI:112312T:222814F:N:Turn 1    Dodge\nTurn 2    Alpha Strike\nTurn 3    Nature's Ward\nTurn 4    Alpha Strike\nTurn 5    Alpha Strike\nTurn 6    Dodge\nTurns 7+    Alpha Strike until Vilefang is dead\nIf your Teroclaw Hatchling dies too early, bring in your random level 25 pet and finish Vilefang with standard attacks.\nAn enemy pet comes in\nTurns 1+    Use your Teroclaw Hatchling and random pet until both are dead - often they finish the fight already.\nBring in your Emerald Proto-Whelp\nTurn 1    Emerald Presence\nTurn 2+    Keep Emerald Presence active, use Emerald Dream when you drop below 1000 health and use Emerald Bite to finish the enemy pets.\nTry to heal up before you kill the last enemy pet
+8:ecto1_2::1125QC:1128PI:222814F:N:Turn 1    Decoy\nTurns 2+    Breath until Growing Ectoplasm is dead\nIf your Mechanical Pandaren Dragonling dies too early, bring in your random level 25 pet and use standard spells to kill Growing Ectoplasm\nAn enemy pet comes in\nTurns 1+    Breath and Decoy with your Mechanical Pandaren Dragonling and your random pet until they are both dead\nBring in your Emerald Proto-Whelp\nTurn 1    Emerald Presence\nTurns 2+    Keep Emerald Presence active, use Emerald Dream when you drop below 1000 health and use Emerald Bite to finish the enemy pets.\nDon't forget to jump! ;-)
+8:hiss2::11231HI:121B8L:222814F:N:Turn 1    Whirlpool\nTurn 2    Call Lightning\nTurn 3    Swap to your Clockwork Gnome\nTurn 4    Build Turret\nTurn 5    Metal Fist\nTurn 6    Metal Fist - Hiss dies\nAn enemy pet comes in\nTurns 1+    Keep Build Turret on cooldown and use Metal Fist otherwise until your Clockwork Gnome dies\nBring back your Hydraling\nTurn 1    Call Lightning\nTurns 2+    Tail Slap until your Hydraling dies\nBring in your Emerald Proto-Whelp\nTurn 1    Emerald Presence\nTurn 2-4    Emerald Dream\nTurn 5+    Emerald Bite
+9:ecto2b::212415R:222814F:1128A3:N:You can use a Zandalari Kneebiter as well instead of the Anklerender\n\n    \n        \nTurn 1    Black Claw\nTurns 2+3    Hunting Party\nTurn 4    Leap until Growing Ectoplasm is dead\nAn enemy pet comes in\nTurns 1+    Black Claw and Hunting Party until your Zandalari Anklerender dies\nBring in your Emerald Proto-Whelp\nTurn 1    Emerald Presence\nTurns 2+    Keep Emerald Presence active, use Emerald Dream when you drop below 1000 health and use Emerald Bite to finish the enemy pets.
+defiate_smallclaw::2227K1:11192JD:111931U:N:Attention: Do not put any important pets into your back row! They will take damage.\n\n    \n        \nTurn 1    Dodge\nTurn 2    Alpha Strike\nTurn 3    Nature's Ward\nTurns 4+    Keep Dodge on cooldown, Nature's Ward active and use Alpha Strike in between.\nYour Teroclaw Hatchling will solo the fight.
+deviatechomper::2219K1:11231HO:211CCD:N:Attention: Do not put any important pets into your back row! They will take damage.\n\n    \n        \nTurn 1    Dodge\nTurn 2    Alpha Strike\nTurn 3    Nature's Ward\nTurns 4+    Keep Dodge on cooldown, Nature's Ward active and use Alpha Strike in between.\nYour Teroclaw Hatchling will solo the fight.
+
+__ stratholme __
+
+4:cryptfiend2::211BML:211BML:11192JD:
+Belchling:4JCB:111814F:ZR5:ZR2:N:1. Breathx3-4\n2. Defeat secondary pets
+Blackmane::2215198:2215E0:ZR0:N:Against Form 1\n\n Extra Plating\n Make it Rain\n Inflation\n Make it Rain\n\nAgainst Form 2\n\n Inflation- bling dies\n Bring in Hare/Rabbit\n Flurry x2
+blackmane_koe2::11231HI:121B8L:111B14C:
+Crypt Fiend::1116HC:ZR5:ZR2:N:Scratch x4-5
+Huncher::ZR0:1119EK:ZR0:N:Put random pet in first slot\n Attack/pass, Scratch pet will be swapped in\n Scratch as much as you can, use other pets to finish it off
+Liz the Tormentor::111414D:112B211:ZR2:N:Tail Sweep until your Dragonkin dies\n Bring in Twilight Clutch-Sister\n Tail Sweep (make sure Dragonkin is activated)\n Twilight Meteorite\n Tail Sweep
+malowne_1::122A1NF:11181FS:2115K1:
+malowne_3::122CH5:222814S:211314U:
+malowne_kokeiltava1::122BE4:2229C7:221BMQ:
+malowne_try2::222BEV:2116G7:211C1D1:
+malowned_jänot::22251NI:222B1NI:2229C7:
+Nefarious Terry::222B2IO:ZR0:ZR0:N:Black Claw\nSwarm
+Plagued Critters::1116NA:ZR8:ZR0:N:Ensure Renewing Mists and Shell Shield are always active\nSnap in between keeping up both
+Postmaster Malown:4NOL:222BEV:2116G7:211C1D1:N:wowhead:\nRabbit: Dodge (dodges curse and agony), then stampede, Flurry into the debuff\nDodge, Flurry (you may have to do this twice since i got a double 3x roll)\nUndead round for lefty, you can pass if you like, i just hit stampede early.\n\nEnter Mailemental:\nStampede, Rabbit dies\nDreadmaw:\nFlame Breath until he dies\n\nEnter Soul Collector:\nParalyzing venom (you get 1 turn of free damage so use on CD), Glowing toxin, die\nBenax:\nBubble, Mudslide ,Tongue lash to fill\nafter two lashes he killed himself with corpse explosion.
+Risen Guard::1117C9:ZR5:ZR2:N:Scratch x3-4\nFinish off secondary pets
+Sludge Belcher:4JCA:ZR0:222B2IO:ZR0:N:Attack once if you can with first pet - you'll get swapped out\nBlack Claw\nSwarm
+Tommy the Cruel::1116CM:112AF7:ZR0:N:Swarm - your pet will die\nScratch x3
+tommythecruel_2::22162J8:122ANB:11171M1:
+tommythecruel_3::1219K1:112AF7:ZR0:N:Swarm - your pet will die\nScratch x3
+Wandering Phantasm:4JC2:1115D1:ZR5:ZR2:N:Scratch\n Wandering will Haunt here - just keep going with your Scratch pet to take out the secondary pets\n Continue to use your secondary pets to finish off the fight. If you have run into a Plague Whelp, absolutely ensure to have a secondary Humanoid pet
+wandering_phantasm::1128A3:2217K1:21181KO:N:Scratch\n Wandering will Haunt here - just keep going with your Scratch pet to take out the secondary pets\n Continue to use your secondary pets to finish off the fight. If you have run into a Plague Whelp, absolutely ensure to have a secondary Humanoid pet
+
+__ blackrock __
+
+Alran 1::22101RF:222424N:1126140:N:Against Frill:\n\n Shell Shield\n Super Sticky Goo use until Frill dies\n\nAgainst Ruddy:\n\n If there is a Magma Trap on you, use Absorb or Shell Shield until it goes away\n Rabid Strike\n Roar of the Dead\n pet-ability=654]\n\nAgainst Wanderer:\n\n Swap to Chrominius\n Howl\n Surge of Power\n Bring in Restored Revenant once Chrominius dies\n Roar of the Dead\n Ghostly Bite
+alranheartshade2::1126HC:112C93:2223170:N:Against Frill:\n\n Shell Shield\n Super Sticky Goo use until Frill dies\n\nAgainst Ruddy:\n\n If there is a Magma Trap on you, use Absorb or Shell Shield until it goes away\n Rabid Strike\n Roar of the Dead\n pet-ability=654]\n\nAgainst Wanderer:\n\n Swap to Chrominius\n Howl\n Surge of Power\n Bring in Restored Revenant once Chrominius dies\n Roar of the Dead\n Ghostly Bite
+Char:4TRU:212BL7:ZR0:ZR0:N:1. Chew \n2. Stampede\n3. Attack 1-2 times with second pet.
+char_toimiva::222316M:21265S:11182AH:N:1. doom\n2. shadow\n3. haunt\n4. frost bubble\n5. blizzard\n\n..\n..\nmudslide\nclaw
+char_try2::222B1RP:222B1NI:22251NI:N:1. Moth Dust as much as possible\n2. Alpha Strike to fill
+char_try3::122B2IO:11131S9:11261HB:N:1. Moth Dust as much as possible\n2. Alpha Strike to fill
+Horu Cloudwatcher 1::12231SF:22292L:121485:N:Against Bomber:\n\n1. Punch\n2. Bubble\n3. Stampede\n4. Punch x2 - Bomber dies\n\nAgainst Beta:\n\n1. Stampede\n2. Batter x2-3 - Beta dies\n\nAgainst Alpha:\n\n1. If you have 1061 health or more, use Batter x2. If you have less than 1061 health, use Batter x1\n2. Explode\n3. Supercharge\n4. Metal Fist x2
+horu2::111922V:222C2JH:121485:N:Against Bomber:\n\n1. Punch\n2. Bubble\n3. Stampede\n4. Punch x2 - Bomber dies\n\nAgainst Beta:\n\n1. Stampede\n2. Batter x2-3 - Beta dies\n\nAgainst Alpha:\n\n1. If you have 1061 health or more, use Batter x2. If you have less than 1061 health, use Batter x1\n2. Explode\n3. Supercharge\n4. Metal Fist x2
+horu3_toimi::1116GQ:2215198:121B8L:N:Against Bomber:\n\n1. Punch\n2. Bubble\n3. Stampede\n4. Punch x2 - Bomber dies\n\nAgainst Beta:\n\n1. Stampede\n2. Batter x2-3 - Beta dies\n\nAgainst Alpha:\n\n1. If you have 1061 health or more, use Batter x2. If you have less than 1061 health, use Batter x1\n2. Explode\n3. Supercharge\n4. Metal Fist x2
+horu4::12231SF:222C2JH:121485:N:Against Bomber:\n\n1. Punch\n2. Bubble\n3. Stampede\n4. Punch x2 - Bomber dies\n\nAgainst Beta:\n\n1. Stampede\n2. Batter x2-3 - Beta dies\n\nAgainst Alpha:\n\n1. If you have 1061 health or more, use Batter x2. If you have less than 1061 health, use Batter x1\n2. Explode\n3. Supercharge\n4. Metal Fist x2
+Liz 1:4TRI:11181FS:ZRA:ZR0:N:1. Black Claw\n2. Flock \n3. Finish up with third pet if needed
+Ninn Jah:4TRP:2128MS:122919C:ZR0:N:1. Moth Dust as much as possible\n2. Alpha Strike to fill
+Pixy Wizzle:4SED:22201NH:ZR0:ZR0:N:1. Sunlight\n2. Photosynthesis\n3. Ironbark\n4. From here, use Ironbark as much as possible, refresh Photosynthesis with 1 round left, and maintain Sunlight
+pixy_wizzle::2223170:ZR0:ZR0:N:1. Sunlight\n2. Photosynthesis\n3. Ironbark\n4. From here, use Ironbark as much as possible, refresh Photosynthesis with 1 round left, and maintain Sunlight
+Ralf 1 ::11181FS:ZRA:ZR0:N:1. Black Claw\n2. Flock \n3. Savage Talon if you can\n4. Bring in second Mechanical to finish up if needed
+Rampage 1:4TRH:11181FS:ZRA:ZR0:N:1. Black Claw\n2. Flock \n3. Savage Talon\n4. Bring in second Mechanical to finish up if needed
+Shred:4TRQ:121B2C6:1116G7:ZR0:N:1. Black Claw\n2. Flock\n3. Immolate\n4. Conflagrate
+Splint :4TRO:1227JJ:22171A7:ZR0:N:1. Diseased Bite\n2. Creeping Fungus\n3. Corpse Explosion\n4. Dead Man's Party\n5. Bone bite if you can or attack once with third pet
+Tasha Riley::222B2IO:2215198:21281FH:N:Against Presto:\n\n1. Black Claw\n2. Swarm\n3. Pass on Presto's death round \n\nAgainst Fury:\n\n1. Swarm if your Skitterling is still alive, if not Make it Rain\n2. Extra Plating\n3. Make it Rain\n4. Inflation\n5. Extra Plating\n6. Make it Rain\n7. Inflation\n\nAgainst Glitzy:\n\n1. Inflation\n2. Prowl\n3. Call Darkness - You'll win on the last round
+tasha2::222B2IO:2215198:21141LH:N:Against Presto:\n\n1. Black Claw\n2. Swarm\n3. Pass on Presto's death round \n\nAgainst Fury:\n\n1. Swarm if your Skitterling is still alive, if not Make it Rain\n2. Extra Plating\n3. Make it Rain\n4. Inflation\n5. Extra Plating\n6. Make it Rain\n7. Inflation\n\nAgainst Glitzy:\n\n1. Inflation\n2. Prowl\n3. Call Darkness - You'll win on the last round
+tasha_4::222B2IO:2215198:221820E:N:Against Presto:\n\n1. Black Claw\n2. Swarm\n3. Pass on Presto's death round \n\nAgainst Fury:\n\n1. Swarm if your Skitterling is still alive, if not Make it Rain\n2. Extra Plating\n3. Make it Rain\n4. Inflation\n5. Extra Plating\n6. Make it Rain\n7. Inflation\n\nAgainst Glitzy:\n\n\n\n\n\n\n\n--1. Inflation\n2. Prowl\n3. Call Darkness - You'll win on the last round
+Templeton::21152F9:ZR0:ZR0:N:1. Black Claw\n2. Rip\n3. Devour \n4. Finish off with second or third pet
+Therin Skysong 1a:4SEF:21165S:2225K1:1225QC:N:Against Logic:\n\n1. Disruption\n2. Seethe\n3. Life Exchange\n4. Seethe until Ravenous Prideling dies\n5. Flurry if Logic is not on death round\n\nOn Logic's Mechanical death round:\n\n1. Dodge\n2. Stampede - Logic should die on the third round\n\nAgainst Math:\n\n1. Stampede - Rabbit/Hare will be swapped out\n2. Thunderbolt\n3. Breath\n4. Decoy\n5. Swap to Hare/Rabbit\n6. Stampede - Hare/Rabbit will die or be swapped out\n7. Thunderbolt
+therin2::111513P:2227K1:11181LP:N:Against Logic:\n\n1. Disruption\n2. Seethe\n3. Life Exchange\n4. Seethe until Ravenous Prideling dies\n5. Flurry if Logic is not on death round\n\nOn Logic's Mechanical death round:\n\n1. Dodge\n2. Stampede - Logic should die on the third round\n\nAgainst Math:\n\n1. Stampede - Rabbit/Hare will be swapped out\n2. Thunderbolt\n3. Breath\n4. Decoy\n5. Swap to Hare/Rabbit\n6. Stampede - Hare/Rabbit will die or be swapped out\n7. Thunderbolt
+therin3::11276A:2229K1:1225QC:N:Against Logic:\n\n1. Disruption\n2. Seethe\n3. Life Exchange\n4. Seethe until Ravenous Prideling dies\n5. Flurry if Logic is not on death round\n\nOn Logic's Mechanical death round:\n\n1. Dodge\n2. Stampede - Logic should die on the third round\n\nAgainst Math:\n\n1. Stampede - Rabbit/Hare will be swapped out\n2. Thunderbolt\n3. Breath\n4. Decoy\n5. Swap to Hare/Rabbit\n6. Stampede - Hare/Rabbit will die or be swapped out\n7. Thunderbolt
+therin4::2116G7:2229K1:1225QC:N:Against Logic:\n\n1. Disruption\n2. Seethe\n3. Life Exchange\n4. Seethe until Ravenous Prideling dies\n5. Flurry if Logic is not on death round\n\nOn Logic's Mechanical death round:\n\n1. Dodge\n2. Stampede - Logic should die on the third round\n\nAgainst Math:\n\n1. Stampede - Rabbit/Hare will be swapped out\n2. Thunderbolt\n3. Breath\n4. Decoy\n5. Swap to Hare/Rabbit\n6. Stampede - Hare/Rabbit will die or be swapped out\n7. Thunderbolt
+therin5::2116G7:212C93:2119GN:N:Elemental team!\n\nwater elemental retty useless, singing does most dmg, keep heals up\n\n\n\n\n\n--------\nAgainst Logic:\n\n1. Disruption\n2. Seethe\n3. Life Exchange\n4. Seethe until Ravenous Prideling dies\n5. Flurry if Logic is not on death round\n\nOn Logic's Mechanical death round:\n\n1. Dodge\n2. Stampede - Logic should die on the third round\n\nAgainst Math:\n\n1. Stampede - Rabbit/Hare will be swapped out\n2. Thunderbolt\n3. Breath\n4. Decoy\n5. Swap to Hare/Rabbit\n6. Stampede - Hare/Rabbit will die or be swapped out\n7. Thunderbolt
+Wilbur:4TRT:12141BB:ZR0:ZR0:N:1. Wind-Up\n2. Supercharge\n3. Wind-Up\n4. Wind-Up\n5. Toxic Smoke\n6. Wind-Up\n7. Pass / Toxic Smoke again if you have enough health
+Zuna Skullcrush 1::222414D:222814S:212415R:N:Against Crushface:\n\n Arcane Storm\n Swap to Zandalari Kneebiter\n Black Claw\n Hunting Party\n Bloodfang\n\nAgainst Fozling:\n\n Swap back to Nexus Whelpling\n Arcane Storm\n Swap to Zandalari Anklerender\n Black Claw\n Hunting Party\n Leap if you have to, or if Zandalari Anklerender dies bring in Nexus Whelpling to use Tail Sweep\n\nAgainst Tremors:\n\n Bring back in Nexus Whelpling if you havent already\n Tail Sweep\n Arcane Storm\n Swap to Zandalari Kneebiter\n Black Claw\n Hunting Party\n Bring back in Nexus Whelpling and attack once if needed with Mana Surge
+zuna3a::11176A:2227CV:211B1RP:N:Turn 1, Blightbreath casts “bash”.\nTurn 2, let your beetle in and cast “apocalypse”.\nTurn 3, switch to your fawn and cast “bleat” and “tranquility”.\nMaintain “tranquility” active all along casting “bleat” when available.\n\nThree turns before “apocalypse” hits, switch back to Blightbreath so he casts “bash”, then go back to your beetle. \n\nHeal it with “cauterize” (or not, who cares as fawn will heal it anyway) and cast “apocalypse” once more as soon as you can, then switch back to the fawn and go back to “bleat” and “tranquility”.\n\nOne turn before “apocalypse” detonates, switch to the beetle.\n\nWhen only one opponent stands, switch to the fawn and cast “tranquility”, “bleat” and “stampede” (you might go for “stampede” straight away as it is a 3 versus 1 fight from now on, but well…).\nFawn dies, let Blightbreath in and cast “slime” then “sleeping gas”. If the opponent is not put to sleep, cast “bash”.
+zuna_3::21181FT:1126HC:211B1RP:N:Against Crushface:\n\n Arcane Storm\n Swap to Zandalari Kneebiter\n Black Claw\n Hunting Party\n Bloodfang\n\nAgainst Fozling:\n\n Swap back to Nexus Whelpling\n Arcane Storm\n Swap to Zandalari Anklerender\n Black Claw\n Hunting Party\n Leap if you have to, or if Zandalari Anklerender dies bring in Nexus Whelpling to use Tail Sweep\n\nAgainst Tremors:\n\n Bring back in Nexus Whelpling if you havent already\n Tail Sweep\n Arcane Storm\n Swap to Zandalari Kneebiter\n Black Claw\n Hunting Party\n Bring back in Nexus Whelpling and attack once if needed with Mana Surge
+
+__ deadmines __
+
+"Captain" Klutz::212C5U:221316M:11171A7:N:Round 1: Pass, Klutz stuns you.\nRound 2: Unholy Ascension.\nRound 3: Choose Unborn Val'kyr, use Doom.\nRound 4: Haunt\nMacabre Marionette enters. Use "Dead Man's Party" and Klutz should die before all three turns of Dead Man's Party are done.
+Angry Geode::22231H3:111A9V:11251H4:N:Use Stoneskin and keep it refreshed when one round of Stoneskin remains. Use Headbutt on cooldown and Water Jet as filler until Geode dies. \n\nStandard battle pets with beast, flying, or magic abilities work for the backline enemy pets. I prefer Feline Familiar as it mitigates well and does a good amount of self-healing, as well as having both a magic ability and beast ability to defeat both flyers and critters.
+Cookie's Leftovers::2115198:212415R:222814S:N:Round 1: Make It Rain\n*Lil Bling gets put to sleep here. Swap to your Anklerender.\nRound 2: Black Claw \nRound 3: Hunting Party\nIf Cookie's Leftover isn't dead finish the fight with Leap. If your Anklerender dies before Hunting Party finishes, swap to your Kneebiter and use Leap.
+Foe Reaper 50::12198E:12255F:121499:N:**Hatespark is very rare, and thus, OPTIONAL! Use another pet with Conflagrate if you don't have him!**\n\nRound 1: Immolate\nRound 2: Conflagrate\nRound 3: Switch to your other Pheonix Hatchling. \nRound 4: Conflagrate\nRound 5: Refresh Immolate\nRound 6: Switch to Hatespark (or another pet with Conflagrate) and use Conflagrate. \nRound 7: Use Burn until Foe Reaper is dead.
+Klutz's Battle Bird::2217HD:211A9V:11251H4:N:Start with Moonfire, and then three Arcane Blasts should take care of the Battle Bird.\n\nStandard battle pets with beast, flying, or magic abilities work for the backline enemy pets. I prefer Feline Familiar as it mitigates well and does a good amount of self-healing, as well as having both a magic ability and beast ability to defeat both flyers and critters.
+Klutz's Battle Monkey::11171BB:11251H4:2224EM:N:Round 1: Wind-up\nRound 2: Supercharge\nRound3: Wind-up\nBattle Monkey dies.\n\nStandard battle pets with beast, flying, or magic abilities work for the backline enemy pets. I prefer Feline Familiar as it mitigates well and does a good amount of self-healing, as well as having both a magic ability and beast ability to defeat both flyers and critters.
+Klutz's Battle Rat::211A9V:11251H4:2228CC:N:Keep Stoneskin refreshed.\nUse Onyx Bite as filler until the Rat hits ~300 HP then use Devour. \n\nStandard battle pets with beast, flying, or magic abilities work for the backline enemy pets. I prefer Feline Familiar as it mitigates well and does a good amount of self-healing, as well as having both a magic ability and beast ability to defeat both flyers and critters.
+Mining Monkey::11171BB:111A9V:11251H4:N:Round 1: Wind-up\nRound 2: Supercharge\nRound 3: Wind-up\nRound 4: If the monkey isn't dead yet, use Powerball.\n\nUse your **Feline Familar for the backline pets, and keep Stoneskin refresed. Onyx Bite as filler and use Devour when the enemy pet is around 300 HP. \n**Alternatively if the backline pets are aquatic, you can use any flying type to defeat them. I like Bloodfeather for its self-heal and Hawkeye skill.
+Unfortunate Defias::222AMK:111A9V:111319I:N:Use Howl on cooldown and use Flurry as filler. When Unfortunate Defias resurrects for one round, use \nDazzling Dance.\n\nStandard battle pets with beast, flying, or magic abilities work for the backline enemy pets. I prefer Feline Familiar as it mitigates well and does a good amount of self-healing, as well as having both a magic ability and beast ability to defeat both flyers and critters.
