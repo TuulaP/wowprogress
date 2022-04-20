@@ -1,4 +1,5 @@
 
+## from distutils.util import run_2to3
 from blizzardapi import BlizzardApi
 from dotenv import load_dotenv
 from requests_oauthlib import OAuth2Session
@@ -132,9 +133,39 @@ while ind < numofchars:
     ind += 1
 #    time.sleep(2)
 
-    print(chardetails)
+    ##print(chardetails)
+    achpoints = chardetails['achievement_points']
 
-    import sys
+    guildlink = ""
+    guilddetails =  None
+    guildname = "No guild"
+
+
+    # guild information
+    if 'guild' in chardetails:
+        guilddetails = chardetails['guild']
+
+    if guilddetails is not None:
+        guildlink = guilddetails['key']['href']
+        print("Guild: ", guilddetails['name'] , guildlink, achpoints)
+        guildname = guilddetails['name']    
+        # r3 = blizzard.get(guildlink)
+        # ginfo = json.loads(r3.content)
+        # gactivity = ginfo['activity']['href']
+        # print(ginfo)
+
+        # print("Guild activity: ", gactivity)
+
+        # r4 = blizzard.get(gactivity)
+        # ginfoact = json.loads(r4.content)
+        
+        # print(ginfoact)
+
+
+
+    #import sys
+    #sys.exit(1)
+
 
     if 'code' in chardetails:
         print('Oh noes! For {0} from {1} realm got '.format(charname, realmnames[ind]), chardetails['code'])
@@ -225,6 +256,8 @@ while ind < numofchars:
         , chardetails['equipped_item_level']
         , career1, careerpoints
         , career2, careerpoints2
+        , guildname
+        , achpoints
     ])
 
 
@@ -232,7 +265,7 @@ while ind < numofchars:
 # and finally the results processing
 
 
-header = ["name","character_class","spec","race","realm","level","experience","levelpros","level%", "renown", "ilvl", "Profession1", "Profession1Points","Profession2","Profession2Points"]
+header = ["name","character_class","spec","race","realm","level","experience","levelpros","level%", "renown", "ilvl", "Profession1", "Profession1Points","Profession2","Profession2Points", "Guild", "AchPoints" ]
 
 with open('test.csv', 'w', encoding="UTF8") as fp:
     writer = csv.writer(fp, delimiter=',')

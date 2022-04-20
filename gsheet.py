@@ -20,11 +20,21 @@ def read_spreadsheet():
     gsheetid = os.environ.get("GSHEET_ID")
 
     SAMPLE_SPREADSHEET_ID_input = gsheetid
-    SAMPLE_RANGE_NAME = 'test!A1:M30'
+    SAMPLE_RANGE_NAME = 'test!A1:U35'  #, was R35, was M30  increase when adding ddata
     RANGE2 = 'versions!A1:A100'
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
-    creds = None
+    creds = None    
+
+    # better to refresh token every time
+    if is_file_older_than('token.pickle', timedelta(hours=12)):
+        # remove file
+        print("Removing tokens")
+        os.remove('token.pickle')
+        os.remove('token_write.pickle')
+
+
+
     if os.path.exists('token.pickle'):
         with open('token.pickle', 'rb') as token:
             creds = pickle.load(token)
@@ -78,8 +88,9 @@ def Create_Service(client_secret_file, api_service_name, api_version, *scopes):
     cred = None
 
     # better to refresh token every time
-    if is_file_older_than('token.pickle', timedelta(days=1)):
+    if is_file_older_than('token.pickle', timedelta(hours=12)):
         # remove file
+        print("Removing tokens")
         os.remove('token.pickle')
         os.remove('token_write.pickle')
     
@@ -113,7 +124,7 @@ def Export_Data_To_Sheets(df_gold, df2):
     gsheetid = os.environ.get("GSHEET_ID")
 
     SAMPLE_SPREADSHEET_ID_input = gsheetid
-    SAMPLE_RANGE_NAME = 'test!A1:R35'  #was M30
+    SAMPLE_RANGE_NAME = 'test!A1:U35'  #, was R35, was M30
     RANGE2 = 'versions!A1:A100'
 
 
