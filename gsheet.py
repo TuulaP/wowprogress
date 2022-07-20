@@ -27,11 +27,14 @@ def read_spreadsheet():
     creds = None    
 
     # better to refresh token every time
-    if is_file_older_than('token.pickle', timedelta(hours=12)):
-        # remove file
-        print("Removing tokens")
-        os.remove('token.pickle')
-        os.remove('token_write.pickle')
+    
+    if os.path.exists('token.pickle'):
+
+        if is_file_older_than('token.pickle', timedelta(hours=12)):
+            # remove file
+            print("Removing tokens")
+            os.remove('token.pickle')
+            os.remove('token_write.pickle')
 
 
 
