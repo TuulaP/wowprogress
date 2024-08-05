@@ -8,9 +8,10 @@ from datetime import datetime, timedelta
 
 # from https://medium.com/analytics-vidhya/how-to-read-and-write-data-to-google-spreadsheet-using-python-ebf54d51a72c
 
-
 # here enter the id of your google sheet
 from dotenv import load_dotenv
+
+SHEET_DATA_RANGE = 'test!A1:U56'  # TODO: get row size from df+1
 
 
 def read_spreadsheet():
@@ -20,7 +21,7 @@ def read_spreadsheet():
     gsheetid = os.environ.get("GSHEET_ID")
 
     SAMPLE_SPREADSHEET_ID_input = gsheetid
-    SAMPLE_RANGE_NAME = 'test!A1:U35'  #, was R35, was M30  increase when adding ddata
+    SAMPLE_RANGE_NAME = SHEET_DATA_RANGE # 'test!A1:U36'  #, was U35, was M30  increase when adding ddata
     RANGE2 = 'versions!A1:A100'
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
@@ -62,7 +63,8 @@ def read_spreadsheet():
     result_input2 = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID_input,
                         range=RANGE2).execute()
     values_versions = result_input2.get('values', [])
-    print(values_versions)
+
+    #print("Vals", values_versions)
 
 
     if not values_input and not values_expansion:
@@ -114,7 +116,7 @@ def Create_Service(client_secret_file, api_service_name, api_version, *scopes):
 
     try:
         service = build(api_service_name, api_version, credentials=cred)
-        print(api_service_name, 'service created successfully')
+        #print(api_service_name, 'service created successfully')
         #return service
     except Exception as e:
         print(e)
@@ -127,7 +129,7 @@ def Export_Data_To_Sheets(df_gold, df2):
     gsheetid = os.environ.get("GSHEET_ID")
 
     SAMPLE_SPREADSHEET_ID_input = gsheetid
-    SAMPLE_RANGE_NAME = 'test!A1:U35'  #, was R35, was M30
+    SAMPLE_RANGE_NAME = SHEET_DATA_RANGE  #'test!A1:U36'  #, was R35, was M30
     RANGE2 = 'versions!A1:A100'
 
 
@@ -174,7 +176,9 @@ if __name__ == '__main__':
     timestampStr = dateTimeNow.strftime("%d.%m.%Y %H:%M:%S.%f")
 
     new_row = pd.Series(data={'UpdatedDate':timestampStr})
-    df2 = df2.append(new_row, ignore_index=True)
+    df2 = df2._append(new_row, ignore_index=True)  # https://stackoverflow.com/a/76449334/364931
+
+
 
     # df_gold is the new dataframe
     df_gold  = df  # do any processing desired to sheet 1.
@@ -184,6 +188,13 @@ if __name__ == '__main__':
     df_gold['levels_up'] = pd.to_numeric(df['level']) - pd.to_numeric(df_old['level'])
 
 
+    print(df_gold)
+
+    defnil = 0.0
+
+    #df_gold = df_gold.fillna(defnil, inplace=True)
+
+    print("Loppudata:")
     print(df_gold)
 
     # Filterings

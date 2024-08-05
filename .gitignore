@@ -1,17 +1,22 @@
 
+.venv/*
+
 .env
 *.pyc
 tmp/
 wowprog/*
 test.csv
 my_json_file.json
+*.json
 
 blizzapi.py
+*.pickle
 token.pickle
 token_write.pickle
 *.pickle
 copilot1.py
 
-Untitled-2.tmp
+*.tmp
 feats.txt
 *ORIG
+xp.txt

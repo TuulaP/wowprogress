@@ -1,12 +1,18 @@
 
-## from distutils.util import run_2to3
-from blizzardapi import BlizzardApi
-from dotenv import load_dotenv
-from requests_oauthlib import OAuth2Session
-
+import sys
 import csv
 import json
 import os
+
+# utilizing local version
+sys.path.insert(0, os.path.abspath('../python-blizzardapi'))
+
+from blizzardapi import  BlizzardApi
+
+#from blizzardapi import BlizzardApi
+from dotenv import load_dotenv
+from requests_oauthlib import OAuth2Session
+
 
 import pandas as pd
 import time
@@ -21,10 +27,16 @@ client_secret = os.environ.get("CLIENT_SECRET")
 redirect_uri = os.environ.get("REDIRECT_URI")
 access_token = os.environ.get("TOKEN")
 
+#kek
+import os 
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+
 
 # OAuth endpoints given in the Blizzard API documentation
 authorization_base_url = "https://eu.battle.net/oauth/authorize"
 token_url = "https://eu.battle.net/oauth/token"
+
+# was wow.proifle
 scope = [
     "wow.profile",
 ]
@@ -45,6 +57,9 @@ print('Please go here and authorize,', authorization_url)
 # Get the authorization verifier code from the callback url
 redirect_response = input('Paste the full redirect URL here:')
 
+
+print("REsp.::\n",redirect_response,"\n")
+
 # Fetch the access token
 blizzard.fetch_token(token_url, client_secret=client_secret,
     authorization_response=redirect_response)
@@ -54,14 +69,15 @@ blizzard.fetch_token(token_url, client_secret=client_secret,
 # Fetch a protected resource, i.e. user profile
 # https://eu.api.blizzard.com/profile/user/wow?namespace=profile-us&locale=en_GB&access_token=ABC
 
-r = blizzard.get('https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu&locale=en_GB')
+r = blizzard.get('https://eu.api.blizzard.com/profile/user/wow?namespace=profile-eu&locale=en_US')
 
+print("API result:", r.status_code)
 
 # process characters
 
 charinfo = json.loads(r.content)
 
-# print(charinfo["_links"])
+print(charinfo["_links"])
 # print("wowaccounts---->\n")
 # print(charinfo["wow_accounts"])
 
@@ -88,8 +104,8 @@ for account in charinfo["wow_accounts"]:
         realmnames.append(realmname)
 
 
-# print("Allmychars\n\n")
-print(allmychars)
+#print("Allmychars\n\n")
+#print(allmychars)
 # ------------------------------------
 # Process each character
 # ------------------------------------
@@ -101,9 +117,11 @@ datarows = []
 X = pd.read_csv('xp.txt', sep="\t", header=0, usecols=[0,1])
 
 
-print(charnames)
-print(realmnames)
-print("----------------")
+#print("------Chars-----")
+#print(charnames)
+#print("-----Realms-----")
+#print(realmnames)
+#print("----------------")
 
 
 blizapiclient = BlizzardApi(client_id, client_secret)
@@ -119,22 +137,32 @@ numofchars = len(charnames)
 while ind < numofchars:
 
     charname = charnames[ind]
-    # print("Processing url ", charurl+'&locale=en_US&access_token='+access_token'
+    ##print("Processing url " + charurl+'&locale=en_US&access_token='+access_token)
 
-    # r2 = blizzard.get(charurl+'&locale=en_US')
-    # print(r2.content)
-
-    print('Processing {0} from realm {1}'.format(charname, realmnames[ind]))
+    print('\n>>Processing {0} from realm {1}'.format(charname, realmnames[ind]))
 
     chardetails = blizapiclient.wow.profile.get_character_profile_summary(
-        "eu", "en_GB", realmnames[ind], charname)
+        "eu", "en_US", realmnames[ind], charname)
 
     # json.loads(r2.content)
     ind += 1
-#    time.sleep(2)
+#   time.sleep(2)
 
-    ##print(chardetails)
-    achpoints = chardetails['achievement_points']
+    dataerror = 0
+
+    #print(chardetails)
+    if 'achievement_points' in chardetails: 
+        achpoints = chardetails['achievement_points']
+    else:
+        achpoints = "No data"
+        dataerror = 1
+        chardetails = {'race':{"name":"noRace"}
+                       ,'character_class':{'name':'noClass'}
+                       ,'realm':{'name':realmnames[ind]}
+                       ,'name':charname
+                       ,'level':0
+                       ,'experience':0.0
+                       ,'equipped_item_level':0}
 
     guildlink = ""
     guilddetails =  None
@@ -149,22 +177,6 @@ while ind < numofchars:
         guildlink = guilddetails['key']['href']
         print("Guild: ", guilddetails['name'] , guildlink, achpoints)
         guildname = guilddetails['name']    
-        # r3 = blizzard.get(guildlink)
-        # ginfo = json.loads(r3.content)
-        # gactivity = ginfo['activity']['href']
-        # print(ginfo)
-
-        # print("Guild activity: ", gactivity)
-
-        # r4 = blizzard.get(gactivity)
-        # ginfoact = json.loads(r4.content)
-        
-        # print(ginfoact)
-
-
-
-    #import sys
-    #sys.exit(1)
 
 
     if 'code' in chardetails:
@@ -197,22 +209,16 @@ while ind < numofchars:
     ## print("Professions:", charprofs)
 
 
-
     print(chardetails["name"])
-    print(chardetails["race"]["name"])
-    print(chardetails["character_class"]["name"])
 
     activespec = ""
     if "active_spec" in chardetails:  # for very new chars this does not exist
-        print(chardetails["active_spec"]["name"])
+        #print(chardetails["active_spec"]["name"])
         activespec = chardetails["active_spec"]["name"]
     else:
         activespec = "No spec selected"
 
     print(chardetails["realm"]["name"])
-    print(chardetails["level"])
-    print(chardetails["experience"])
-
 
     renownlvl = 0
 
@@ -223,11 +229,17 @@ while ind < numofchars:
         renownlvl = 0
 
 
-    level = chardetails["level"]
-    totalevel = X["Total"][level]
-    levelpros = chardetails["experience"] / totalevel
+    if not dataerror:
+        level = chardetails["level"]
+        totalevel = X["Total"][level]
+        levelpros = chardetails["experience"] / totalevel
+    else:
+        level =0
+        totalevel = 0
+        levelpros = 0
 
-    print("Level progress:", format(levelpros,".4f") , "/", format( levelpros * 100,".2f") , " %")
+
+    print("{0}:Level progress:".format(level), format(levelpros,".4f") , "/", format( levelpros * 100,".2f") , " %")
 
     career1 = "None1"
     career2 = "None2"
@@ -261,7 +273,6 @@ while ind < numofchars:
     ])
 
 
-
 # and finally the results processing
 
 
@@ -284,9 +295,9 @@ df_old = pd.DataFrame(values_input[1:], columns=values_input[0])
 
 df = pd.read_csv('test.csv')
 
-print(df)
+#print(df)
 
-print("READING DONE")
+print("Sheet reading completed.")
 
 df2 = pd.DataFrame(values_versions[1:], columns=values_versions[0])
 
@@ -296,7 +307,7 @@ dateTimeNow = datetime.now()
 timestampStr = dateTimeNow.strftime("%d.%m.%Y %H:%M:%S.%f")
 
 new_row = pd.Series(data={'UpdatedDate':timestampStr})
-df2 = df2.append(new_row, ignore_index=True)
+df2 = df2._append(new_row, ignore_index=True)
 
 # df_gold is the new dataframe
 df_gold  = df  # do any processing desired to sheet 1.
@@ -320,8 +331,9 @@ if df_gold['levels_up'].any() > 0:
 print("Opening sheet")
 Create_Service('my_json_file.json', 'sheets', 'v4',['https://www.googleapis.com/auth/spreadsheets'])
 
-# Fix for mysterious invalid json payload issue, from  https://github.com/burnash/gspread/issues/680#issuecomment-561936295
-df_gold.fillna('', inplace=True)
+# Fix for mysterious invalid json payload issue, from  
+# https://github.com/burnash/gspread/issues/680#issuecomment-561936295
+df_gold.fillna(0.0, inplace=True)
 
 print("Final print to sheet ")
 Export_Data_To_Sheets(df_gold, df2)
