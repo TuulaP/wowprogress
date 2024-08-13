@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 # here enter the id of your google sheet
 from dotenv import load_dotenv
 
-SHEET_DATA_RANGE = 'test!A1:U56'  # TODO: get row size from df+1
+SHEET_DATA_RANGE = 'test!A1:U57'  # TODO: get row size from df+1
 
 
 def read_spreadsheet():
