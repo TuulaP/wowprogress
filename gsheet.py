@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 # here enter the id of your google sheet
 from dotenv import load_dotenv
 
-SHEET_DATA_RANGE = 'test!A1:U57'  # TODO: get row size from df+1
+SHEET_DATA_RANGE = 'test!A1:U60'  # TODO: get row size from df+1
 
 
 def read_spreadsheet():
@@ -58,7 +58,21 @@ def read_spreadsheet():
     sheet = service.spreadsheets()
     result_input = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID_input,
                         range=SAMPLE_RANGE_NAME).execute()
+    
+    
     values_input = result_input.get('values', [])
+
+    # todo - location of this logic
+    # print("valuesInput", len(values_input))
+    # (lastcol)=(SHEET_DATA_RANGE.split(":")[1])
+    # colchar=lastcol[0]
+    # colnum=int(lastcol[1:])
+    # print("colchar: ",colchar,"ja:",colnum)
+
+    # # add 1+ row if more characters exist
+    # if len(values_input) >= colnum:
+    #     SHEET_DATA_RANGE='test!A1:U' + str(len(values_input)+1)
+
 
     result_input2 = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID_input,
                         range=RANGE2).execute()

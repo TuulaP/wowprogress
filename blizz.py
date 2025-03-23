@@ -33,15 +33,18 @@ os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
 
 # OAuth endpoints given in the Blizzard API documentation
-authorization_base_url = "https://eu.battle.net/oauth/authorize"
-token_url = "https://eu.battle.net/oauth/token"
+authorization_base_url =  "https://oauth.battle.net/authorize"
+#"https://eu.battle.net/oauth/authorize"
+token_url =  "https://oauth.battle.net/token"
+#"https://eu.battle.net/oauth/token"
 
 # was wow.proifle
 scope = [
     "wow.profile",
 ]
 
-# getting token: curl -u {client_id}:{client_secret} -d grant_type=client_credentials https://eu.battle.net/oauth/token
+# getting token: curl -u {client_id}:{client_secret} -d grant_type=client_credentials https://oauth.battle.net/token
+# https://eu.battle.net/oauth/token
 
 
 blizzard = OAuth2Session(client_id, scope=scope, redirect_uri=redirect_uri)
@@ -77,9 +80,9 @@ print("API result:", r.status_code)
 
 charinfo = json.loads(r.content)
 
-print(charinfo["_links"])
-# print("wowaccounts---->\n")
-# print(charinfo["wow_accounts"])
+#print(charinfo["_links"])
+#print("wowaccounts---->\n")
+#print(charinfo["wow_accounts"])
 
 allmychars = []
 charnames = []
@@ -134,15 +137,34 @@ ind = 0
 
 numofchars = len(charnames)
 
+testuri= "https://eu.api.blizzard.com/profile/wow/character/daggerspine/visu?namespace=profile-eu&locale=en_US"
+r3 = blizzard.get(testuri)
+print("API result:", r3.status_code)
+alles = json.loads(r3.content)
+
+print(alles)
+
+# process characters
+
+charinfo = json.loads(r.content)
+
+
+
 while ind < numofchars:
 
     charname = charnames[ind]
-    ##print("Processing url " + charurl+'&locale=en_US&access_token='+access_token)
+    #print("Processing url " + charurl+'&locale=en_US&access_token='+access_token)
 
     print('\n>>Processing {0} from realm {1}'.format(charname, realmnames[ind]))
 
-    chardetails = blizapiclient.wow.profile.get_character_profile_summary(
-        "eu", "en_US", realmnames[ind], charname)
+    #chardetails = blizapiclient.wow.profile.get_character_profile_summary(
+    #    "eu", "en_US", realmnames[ind], charname)
+
+    testuri= "https://eu.api.blizzard.com/profile/wow/character/{0}/{1}?namespace=profile-eu&locale=en_US".format(realmnames[ind],charname)
+    r3 = blizzard.get(testuri)
+    print("API result:", r3.status_code)
+    chardetails = json.loads(r3.content)
+
 
     # json.loads(r2.content)
     ind += 1
